@@ -27,7 +27,6 @@ body{font-family:system-ui,sans-serif;background:var(--bg);color:var(--txt);font
 .main{margin-left:216px;flex:1;padding:26px 30px;min-height:100vh}
 .pg{display:none}.pg.on{display:block}
 h1{font-size:1.55rem;font-weight:700;margin-bottom:4px}
-h2{font-size:1.1rem;font-weight:700;margin-bottom:10px}
 h3{font-size:1rem;font-weight:700;margin-bottom:8px}
 .sub{font-size:13px;color:var(--mut);margin-bottom:20px}
 .card{background:var(--surf);border:1px solid var(--brd);border-radius:var(--rad);padding:20px;margin-bottom:14px;box-shadow:0 2px 8px rgba(42,32,24,0.07)}
@@ -42,15 +41,14 @@ label{display:block;font-size:.69rem;font-weight:600;color:var(--mut);margin-bot
 input[type=text],input[type=number],textarea,select{width:100%;padding:9px 12px;border:1px solid var(--brd);border-radius:7px;background:var(--surf2);font-size:.84rem;color:var(--txt);outline:none;transition:border .14s;font-family:inherit}
 input:focus,textarea:focus,select:focus{border-color:var(--acc)}
 textarea{resize:vertical;min-height:64px}
-select option{background:var(--surf)}
 .btn{padding:7px 14px;border-radius:8px;border:1.5px solid var(--brd);cursor:pointer;font-size:.82rem;font-weight:600;display:inline-flex;align-items:center;gap:5px;transition:all .13s;font-family:inherit;background:var(--surf);color:var(--txt)}
 .btn:hover{border-color:var(--acc);color:var(--acc);background:var(--adim)}
-.btn-p{background:var(--acc);color:#fff;border-color:var(--acc)}.btn-p:hover{background:var(--acc2);border-color:var(--acc2)}
+.btn-p{background:var(--acc);color:#fff;border-color:var(--acc)}.btn-p:hover{background:var(--acc2)}
 .btn-w{background:var(--warm);color:#fff;border-color:var(--warm)}.btn-w:hover{background:#9a6028}
-.btn-d{background:var(--dan);color:#fff;border-color:var(--dan)}.btn-d:hover{background:#a04020}
+.btn-d{background:var(--dan);color:#fff;border-color:var(--dan)}
 .btn-sm{padding:4px 11px;font-size:.74rem}
 .btn-lg{padding:10px 22px;font-size:.9rem}
-.badge{display:inline-flex;align-items:center;padding:2px 8px;border-radius:6px;font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em}
+.badge{display:inline-flex;align-items:center;padding:2px 8px;border-radius:6px;font-size:.65rem;font-weight:700;text-transform:uppercase}
 .b-green{background:var(--adim2);color:var(--acc)}
 .b-amber{background:var(--warmdim);color:var(--warm)}
 .b-blue{background:rgba(61,90,82,0.15);color:var(--acc)}
@@ -65,19 +63,16 @@ tr:hover td{background:var(--surf2)}
 .stat-n{font-size:2rem;font-weight:700;color:var(--acc)}
 .stat-l{font-size:.72rem;color:var(--mut);margin-top:2px}
 .chip{display:inline-flex;align-items:center;gap:4px;padding:4px 10px;border-radius:7px;border:1px solid var(--brd);background:var(--surf2);cursor:pointer;font-size:.77rem;font-weight:600;color:var(--mut);transition:all .12s}
-.chip:hover{border-color:var(--acc);color:var(--acc)}
-.chip.on{background:var(--acc);border-color:var(--acc);color:#fff}
+.chip:hover{border-color:var(--acc);color:var(--acc)}.chip.on{background:var(--acc);border-color:var(--acc);color:#fff}
 .chips{display:flex;flex-wrap:wrap;gap:6px}
 .mchip{display:inline-flex;align-items:center;gap:4px;padding:3px 10px 3px 12px;border-radius:20px;border:1px solid var(--brd);background:var(--adim);font-size:.77rem;font-weight:600;color:var(--acc)}
-.mchip button{background:none;border:none;cursor:pointer;color:var(--mut);font-size:13px;line-height:1;padding:0 1px}
+.mchip button{background:none;border:none;cursor:pointer;color:var(--mut);font-size:13px}
 .prodrow{display:flex;align-items:center;gap:9px;margin-bottom:8px;background:var(--surf2);border-radius:8px;padding:8px 12px;border:1px solid var(--brd)}
 .prodkode{font-size:1.7rem;font-weight:700;color:var(--acc);width:52px;flex-shrink:0}
 .tt-card{border:1.5px solid var(--brd);border-radius:9px;padding:12px 13px;cursor:pointer;transition:all .13s;background:var(--surf2)}
-.tt-card:hover{border-color:var(--acc)}
-.tt-card.on{border-color:var(--acc);background:var(--adim)}
+.tt-card:hover{border-color:var(--acc)}.tt-card.on{border-color:var(--acc);background:var(--adim)}
 .tt-tag{font-size:.59rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--warm);margin-bottom:3px}
-.tt-card h4{font-size:.84rem;font-weight:700;margin-bottom:2px;color:var(--txt)}
-.tt-card p{font-size:.71rem;color:var(--mut);line-height:1.5}
+.tt-card h4{font-size:.84rem;font-weight:700;margin-bottom:2px}.tt-card p{font-size:.71rem;color:var(--mut);line-height:1.5}
 .pbar{height:4px;background:var(--brd);border-radius:2px;margin-bottom:18px;overflow:hidden}
 .pfill{height:100%;background:var(--acc);border-radius:2px;transition:width .4s}
 .scode{font-size:4rem;font-weight:700;text-align:center;color:var(--acc);line-height:1;margin:12px 0 5px;letter-spacing:.06em}
@@ -85,14 +80,13 @@ tr:hover td{background:var(--surf2)}
 .stit{font-size:.63rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--mut);margin-bottom:8px;display:block}
 .scr{display:flex;gap:5px;justify-content:center;flex-wrap:wrap;margin-bottom:6px}
 .scb{width:44px;height:44px;border-radius:8px;border:1.5px solid var(--brd);background:var(--surf2);font-size:15px;font-weight:600;cursor:pointer;transition:all .15s;font-family:inherit;color:var(--mut);display:flex;align-items:center;justify-content:center}
-.scb:hover{border-color:var(--acc);background:var(--surf);color:var(--acc);transform:scale(1.07)}
+.scb:hover{border-color:var(--acc);transform:scale(1.07);color:var(--acc)}
 .scb.on{background:var(--acc);border-color:var(--acc);color:#fff;transform:scale(1.12);box-shadow:0 0 0 3px rgba(61,90,82,0.2)}
 .sclb{display:flex;justify-content:space-between;font-size:.65rem;color:var(--mut);margin-bottom:6px}
 .lk-badge{display:inline-flex;align-items:center;gap:6px;background:var(--adim2);color:var(--acc);border-radius:8px;padding:5px 14px;font-size:.82rem;font-weight:600;border:1px solid rgba(61,90,82,0.2)}
 .lk-feedback{text-align:center;min-height:30px;margin-bottom:14px}
 .jr{display:flex;gap:3px;justify-content:center;margin-bottom:3px}
 .jb{flex:1;max-width:90px;padding:8px 3px;border-radius:7px;border:1px solid var(--brd);background:var(--surf2);cursor:pointer;font-size:.67rem;font-weight:600;text-align:center;transition:all .12s;font-family:inherit;color:var(--mut)}
-.jb:hover{border-color:var(--warm);background:var(--warmdim)}
 .jb.jlo{border-color:var(--dan);background:var(--dandim);color:var(--dan)}
 .jb.jja{border-color:var(--acc);background:var(--adim);color:var(--acc)}
 .jb.jhi{border-color:var(--dan);background:var(--dandim);color:var(--dan)}
@@ -112,195 +106,162 @@ tr:hover td{background:var(--surf2)}
 .succ-box{border-left:3px solid var(--acc);background:var(--adim2);border-radius:0 8px 8px 0;padding:10px 14px;font-size:.78rem;color:var(--acc);margin-bottom:12px}
 .qrwrap{display:flex;flex-direction:column;align-items:center;gap:13px}
 #qrout{background:white;padding:13px;border-radius:8px;display:inline-block;border:1px solid var(--brd)}
-#qrout canvas,#qrout img{display:block}
-.qrd{font-size:2.2rem;font-weight:700;letter-spacing:.15em;color:var(--acc);background:var(--adim);padding:7px 20px;border-radius:8px;border:2px dashed rgba(61,90,82,0.35);text-align:center}
-.url-box{background:var(--surf2);border:1px solid var(--brd);border-radius:8px;padding:10px 14px;font-family:monospace;font-size:.7rem;color:var(--mut);word-break:break-all;margin-top:4px}
+.qrd{font-size:2rem;font-weight:700;letter-spacing:.12em;color:var(--acc);background:var(--adim);padding:7px 20px;border-radius:8px;border:2px dashed rgba(61,90,82,0.35);text-align:center}
+.url-box{background:var(--surf2);border:1px solid var(--brd);border-radius:8px;padding:10px 14px;font-family:monospace;font-size:.7rem;color:var(--mut);word-break:break-all}
 .modal-ov{display:none;position:fixed;inset:0;background:rgba(42,32,24,0.55);z-index:100;align-items:center;justify-content:center;padding:14px}
 .modal-ov.on{display:flex}
 .modal{background:var(--surf);border-radius:var(--rad);padding:22px;max-width:640px;width:100%;max-height:90vh;overflow-y:auto;border:1px solid var(--brd);box-shadow:0 12px 48px rgba(42,32,24,0.2)}
 .mr-ov{display:none;position:fixed;inset:0;background:rgba(42,32,24,0.55);z-index:110;align-items:center;justify-content:center;padding:14px}
 .mr-ov.on{display:flex}
-.mr-box{background:var(--surf);border-radius:var(--rad);padding:28px;max-width:380px;width:100%;text-align:center;border:1.5px solid var(--warm);box-shadow:0 12px 40px rgba(42,32,24,0.18)}
+.mr-box{background:var(--surf);border-radius:var(--rad);padding:28px;max-width:380px;width:100%;text-align:center;border:1.5px solid var(--warm)}
 .pb{display:block;width:100%;text-align:left;padding:10px 14px;border:1.5px solid var(--brd);border-radius:8px;background:var(--surf2);cursor:pointer;font-size:.84rem;margin-bottom:7px;transition:all .12s;font-family:inherit;color:var(--txt)}
-.pb:hover{border-color:var(--acc)}
-.pb.on{border-color:var(--acc);background:var(--adim);font-weight:600}
-.step-dot{width:28px;height:28px;border-radius:50%;border:1px solid var(--brd);background:var(--surf2);display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:600;color:var(--mut);flex-shrink:0}
-.step-dot.on{background:var(--acc);border-color:var(--acc);color:#fff}
+.pb:hover{border-color:var(--acc)}.pb.on{border-color:var(--acc);background:var(--adim);font-weight:600}
 .divider{height:1px;background:var(--brd);margin:12px 0}
-@media print{.sb,.btn{display:none!important}.main{margin-left:0!important}}
-@media(max-width:700px){.sb{width:0;overflow:hidden}.main{margin-left:0;padding:16px}.stat-grid{grid-template-columns:1fr 1fr}.grid2{grid-template-columns:1fr}.fr2,.fr3{grid-template-columns:1fr}}
+/* Setup skærm */
+.setup-wrap{max-width:500px;margin:60px auto;text-align:center}
+.setup-logo{font-size:2rem;font-weight:700;color:var(--acc);margin-bottom:6px}
+.setup-logo span{color:var(--warm)}
+@media(max-width:700px){.sb{display:none}.main{margin-left:0;padding:16px}}
 </style>
 </head>
 <body>
-<div class="app">
-<nav class="sb" role="navigation" aria-label="Hovedmenu">
+
+<!-- SETUP SKÆRM (vises hvis ingen token er gemt) -->
+<div id="setup-screen" style="display:none;min-height:100vh;background:var(--bg);display:flex;align-items:center;justify-content:center;padding:20px">
+  <div style="max-width:480px;width:100%">
+    <div style="text-align:center;margin-bottom:28px">
+      <div style="font-size:2rem;font-weight:700;color:var(--acc)">Sense<span style="color:var(--warm)">Flow</span></div>
+      <div style="font-size:.8rem;color:var(--mut);margin-top:4px;text-transform:uppercase;letter-spacing:.08em">Sensorisk testplatform</div>
+    </div>
+    <div class="card">
+      <h3 style="margin-bottom:6px">Opsætning</h3>
+      <p style="font-size:.84rem;color:var(--mut);margin-bottom:16px;line-height:1.6">For at dele data på tværs af enheder skal SenseFlow bruge dit GitHub-token. Det gemmes kun lokalt i din browser.</p>
+      <div class="fg"><label>GitHub Token</label><input type="password" id="setup-token" placeholder="ghp_xxxxxxxxxxxxxxxxxxxx"></div>
+      <div class="fg"><label>GitHub Brugernavn</label><input type="text" id="setup-user" placeholder="fx johanneshlarsen" value="johanneshlarsen"></div>
+      <div class="fg"><label>Repository navn</label><input type="text" id="setup-repo" placeholder="fx senseflow" value="senseflow"></div>
+      <div class="warn-box" style="font-size:.75rem">Token skal have <strong>repo</strong>-tilladelse. Opret på github.com/settings/tokens</div>
+      <button class="btn btn-p btn-lg" style="width:100%" onclick="gemSetup()">Gem og start SenseFlow</button>
+    </div>
+  </div>
+</div>
+
+<div class="app" id="main-app" style="display:none">
+<nav class="sb">
   <div class="logo">Sense<span>Flow</span></div>
   <div class="sb-tag">Sensorisk testplatform</div>
   <div class="sb-sec">Administrator</div>
   <button class="nb on" onclick="go('dashboard')">&#9700; Oversigt</button>
-  <button class="nb" onclick="go('designer')">&#10024; Forsøgsdesigner</button>
-  <button class="nb" onclick="go('opret')">+ Nyt forsøg</button>
-  <button class="nb" onclick="go('forsog')">&#9776; Mine forsøg</button>
+  <button class="nb" onclick="go('opret')">+ Nyt fors&#248;g</button>
+  <button class="nb" onclick="go('forsog')">&#9776; Mine fors&#248;g</button>
   <button class="nb" onclick="go('qr')">&#9672; QR &amp; deltagere</button>
   <div class="sb-sec">Analyse</div>
-  <button class="nb" onclick="go('analyse')">&#9676; Analyse &amp; Statistik</button>
+  <button class="nb" onclick="go('analyse')">&#9676; Analyse</button>
   <button class="nb" onclick="go('rapport')">&#128196; Rapport</button>
   <button class="nb" onclick="go('metoder')">&#128218; Metodeguide</button>
   <div class="sb-sec">Data</div>
-  <button class="nb csv-btn" onclick="doCSV()">&#8595; Eksport&eacute;r CSV</button>
+  <button class="nb csv-btn" onclick="doCSV()">&#8595; Eksport&#233;r CSV</button>
   <div style="flex:1"></div>
-  <div style="font-size:.6rem;color:rgba(240,228,218,0.18);padding:5px 8px">SenseFlow Pro v4.2</div>
+  <div id="sync-status" style="font-size:.65rem;color:rgba(240,228,218,0.4);padding:5px 8px">&#9679; Synkroniserer...</div>
+  <button style="font-size:.65rem;color:rgba(240,228,218,0.25);background:none;border:none;cursor:pointer;padding:5px 8px;text-align:left" onclick="nulstilSetup()">Nulstil opsætning</button>
 </nav>
 
-<main class="main" role="main">
+<main class="main">
 
 <div id="pg-dashboard" class="pg on">
   <h1>Oversigt</h1>
-  <p class="sub">Administr&eacute;r dine sensoriske fors&oslash;g.</p>
+  <p class="sub">Administr&#233;r dine sensoriske fors&#248;g. Data gemmes i skyen og deles med deltager-siden.</p>
   <div class="stat-grid">
-    <div class="stat-tile"><div class="stat-n" id="sf">0</div><div class="stat-l">Aktive fors&oslash;g</div></div>
+    <div class="stat-tile"><div class="stat-n" id="sf">0</div><div class="stat-l">Aktive fors&#248;g</div></div>
     <div class="stat-tile"><div class="stat-n" id="sd">0</div><div class="stat-l">Deltagere i alt</div></div>
-    <div class="stat-tile"><div class="stat-n" id="ss">0</div><div class="stat-l">Besvarede pr&oslash;ver</div></div>
+    <div class="stat-tile"><div class="stat-n" id="ss">0</div><div class="stat-l">Besvarede pr&#248;ver</div></div>
     <div class="stat-tile"><div class="stat-n" id="sp">0</div><div class="stat-l">Produkter testet</div></div>
   </div>
   <div class="card">
-    <div class="ch"><h3>Fors&oslash;g</h3><button class="btn btn-p btn-sm" onclick="go('opret')">+ Nyt fors&oslash;g</button></div>
+    <div class="ch"><h3>Fors&#248;g</h3><button class="btn btn-p btn-sm" onclick="go('opret')">+ Nyt fors&#248;g</button></div>
     <table><thead><tr><th>Navn</th><th>Testtyper</th><th>Del.</th><th>Status</th><th></th></tr></thead>
-    <tbody id="db-tb"><tr><td colspan="5" style="text-align:center;color:var(--mut);padding:28px">Ingen fors&oslash;g endnu &mdash; opret et nyt fors&oslash;g.</td></tr></tbody></table>
+    <tbody id="db-tb"><tr><td colspan="5" style="text-align:center;color:var(--mut);padding:28px">Ingen fors&#248;g endnu.</td></tr></tbody></table>
   </div>
-  <div id="bak-note" class="succ-box" style="display:none">&#128190; Data autogemt: <span id="bak-ts">&mdash;</span></div>
-</div>
-
-<div id="pg-designer" class="pg">
-  <h1>Intelligent fors&oslash;gsdesigner</h1>
-  <p class="sub">Besvar tre sp&oslash;rgsm&aring;l &mdash; SenseFlow foresl&aring;r det optimale design</p>
-  <div class="card" id="des-s1">
-    <h3>Hvad &oslash;nsker du at unders&oslash;ge?</h3>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:14px 0">
-      <div class="tt-card" onclick="desSel('goal','pref',event)"><div class="tt-tag">Pr&aelig;ference</div><h4>Forbrugerpraference</h4><p>Hvad kan forbrugerne bedst lide?</p></div>
-      <div class="tt-card" onclick="desSel('goal','disc',event)"><div class="tt-tag">Diskrimination</div><h4>Forskelsbedømmelse</h4><p>Er der en sensorisk forskel?</p></div>
-      <div class="tt-card" onclick="desSel('goal','desc',event)"><div class="tt-tag">Beskrivelse</div><h4>Sensorisk profil</h4><p>Hvad karakteriserer produktet?</p></div>
-      <div class="tt-card" onclick="desSel('goal','opt',event)"><div class="tt-tag">Optimering</div><h4>Produktoptimering</h4><p>Hvad skal forbedres?</p></div>
-    </div>
-  </div>
-  <div class="card" id="des-s2" style="display:none">
-    <h3>Antal produkter</h3>
-    <div class="fr3" style="margin:14px 0">
-      <div class="tt-card" onclick="desSel('prods',2,event)"><div class="tt-tag">2 produkter</div><h4>Partest</h4><p>Sammenlign 2 produkter direkte</p></div>
-      <div class="tt-card" onclick="desSel('prods',3,event)"><div class="tt-tag">3 produkter</div><h4>Triadtest</h4><p>Triangeltest mulig</p></div>
-      <div class="tt-card" onclick="desSel('prods','4+',event)"><div class="tt-tag">4+ produkter</div><h4>Multiple</h4><p>Rangordning eller CATA</p></div>
-    </div>
-  </div>
-  <div class="card" id="des-s3" style="display:none">
-    <h3>Paneltype</h3>
-    <div class="fr3" style="margin:14px 0">
-      <div class="tt-card" onclick="desSel('panel','consumer',event)"><div class="tt-tag">Forbrugere</div><h4>Utr&aelig;net panel</h4><p>Tilf&aelig;ldige forbrugere, n &ge; 30</p></div>
-      <div class="tt-card" onclick="desSel('panel','semi',event)"><div class="tt-tag">Semi-tr&aelig;net</div><h4>Valgt panel</h4><p>&Oslash;vet personale, n &ge; 10</p></div>
-      <div class="tt-card" onclick="desSel('panel','expert',event)"><div class="tt-tag">Ekspert</div><h4>Ekspertpanel</h4><p>Certifiseret, n &ge; 5</p></div>
-    </div>
-  </div>
-  <div class="card" id="des-res" style="display:none">
-    <div class="succ-box">&#128161; SenseFlow anbefaler f&oslash;lgende fors&oslash;gsdesign</div>
-    <div id="des-out"></div>
-    <div class="row" style="margin-top:14px">
-      <button class="btn btn-p" onclick="applyDesign()">&#8594; Brug dette design</button>
-      <button class="btn" onclick="resetDesigner()">&#8635; Start forfra</button>
-    </div>
-  </div>
-  <div style="display:flex;gap:8px;margin-top:10px">
-    <div class="step-dot on" id="ds1">1</div><div style="flex:1;height:1px;background:var(--brd);margin:auto"></div>
-    <div class="step-dot" id="ds2">2</div><div style="flex:1;height:1px;background:var(--brd);margin:auto"></div>
-    <div class="step-dot" id="ds3">3</div>
-  </div>
+  <div id="bak-note" class="succ-box" style="display:none">&#128190; Sidst synkroniseret: <span id="bak-ts">&#8212;</span></div>
 </div>
 
 <div id="pg-opret" class="pg">
-  <h1>Nyt fors&oslash;g</h1>
-  <p class="sub">Udfyld fors&oslash;gsdesignet trin for trin</p>
+  <h1>Nyt fors&#248;g</h1>
+  <p class="sub">Udfyld fors&#248;gsdesignet trin for trin</p>
   <div class="card">
     <h3 style="margin-bottom:12px">&#9312; Grundoplysninger</h3>
-    <div class="fr2"><div class="fg"><label>Fors&oslash;gsnavn</label><input type="text" id="f-navn" placeholder="fx Yoghurt sensorisk profil"></div><div class="fg"><label>Ansvarlig</label><input type="text" id="f-ans" placeholder="Dit navn"></div></div>
-    <div class="fr2"><div class="fg"><label>Institution / Projekt</label><input type="text" id="f-inst" placeholder="fx KP Ern&aelig;ring og Sundhed"></div><div class="fg"><label>Dato</label><input type="text" id="f-dato" placeholder="fx 15. juni 2025"></div></div>
-    <div class="fg"><label>Form&aring;l / Hypotese</label><textarea id="f-form" placeholder="Beskriv fors&oslash;gets form&aring;l og hypotese..."></textarea></div>
+    <div class="fr2"><div class="fg"><label>Fors&#248;gsnavn</label><input type="text" id="f-navn" placeholder="fx Yoghurt sensorisk profil"></div><div class="fg"><label>Ansvarlig</label><input type="text" id="f-ans" placeholder="Dit navn"></div></div>
+    <div class="fr2"><div class="fg"><label>Institution</label><input type="text" id="f-inst" placeholder="fx KP Ern&#230;ring og Sundhed"></div><div class="fg"><label>Dato</label><input type="text" id="f-dato"></div></div>
+    <div class="fg"><label>Form&#229;l</label><textarea id="f-form" placeholder="Beskriv fors&#248;gets form&#229;l..."></textarea></div>
     <div class="fr3">
-      <div class="fg"><label>Paneltype</label><select id="f-pan"><option>Utr&aelig;nede forbrugere</option><option>Semitr&aelig;net panel</option><option>Ekspertpanel</option><option>Studerende</option><option>QDA-panel</option></select></div>
-      <div class="fg"><label>M&aring;l antal deltagere</label><input type="number" id="f-ant" value="30" min="2" max="500"></div>
-      <div class="fg"><label>Produktkategori</label><input type="text" id="f-kat" placeholder="fx Mejeri, Bagv&aelig;rk..."></div>
+      <div class="fg"><label>Paneltype</label><select id="f-pan"><option>Utr&#230;nede forbrugere</option><option>Semitr&#230;net panel</option><option>Ekspertpanel</option><option>Studerende</option></select></div>
+      <div class="fg"><label>M&#229;l antal deltagere</label><input type="number" id="f-ant" value="30" min="2" max="500"></div>
+      <div class="fg"><label>Produktkategori</label><input type="text" id="f-kat" placeholder="fx Mejeri..."></div>
     </div>
   </div>
   <div class="card">
     <h3 style="margin-bottom:5px">&#9313; Produkter <span style="font-weight:400;font-size:13px;color:var(--mut)">(min. 2)</span></h3>
-    <p style="font-size:12px;color:var(--mut);margin-bottom:12px">Koder genereres automatisk. Navne er kun synlige for administrator.</p>
+    <p style="font-size:12px;color:var(--mut);margin-bottom:12px">Koder genereres automatisk. Navne kun synlige for administrator.</p>
     <div id="prod-list"></div>
-    <button class="btn btn-sm" onclick="addProd()">+ Tilf&oslash;j produkt</button>
+    <button class="btn btn-sm" onclick="addProd()">+ Tilf&#248;j produkt</button>
   </div>
   <div class="card">
     <h3 style="margin-bottom:5px">&#9314; Sensorisk metode</h3>
-    <p style="font-size:12px;color:var(--mut);margin-bottom:12px">Klik for at v&aelig;lge metode og se forklaring.</p>
     <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(178px,1fr));gap:9px;margin-bottom:10px" id="tt-grid"></div>
     <div id="tt-info" style="display:none" class="info-box"></div>
     <div id="cata-sec" style="display:none;margin-top:12px"><label>CATA-egenskaber</label><div class="chips" id="cata-list" style="margin-bottom:8px"></div><div class="row"><input type="text" id="cata-ny" placeholder="Ny egenskab..." style="max-width:190px"><button class="btn btn-sm" onclick="addCata()">+</button></div></div>
     <div id="jar-sec" style="display:none;margin-top:12px"><label>JAR-egenskaber</label><div class="chips" id="jar-list" style="margin-bottom:8px"></div><div class="row"><input type="text" id="jar-ny" placeholder="Ny JAR-egenskab..." style="max-width:190px"><button class="btn btn-sm" onclick="addJar()">+</button></div></div>
     <div id="rata-sec" style="display:none;margin-top:12px"><label>RATA-egenskaber</label><div class="chips" id="rata-list" style="margin-bottom:8px"></div><div class="row"><input type="text" id="rata-ny" placeholder="Ny RATA-egenskab..." style="max-width:190px"><button class="btn btn-sm" onclick="addRata()">+</button></div></div>
-    <div id="rank-sec" style="display:none;margin-top:12px"><div class="info-box">Deltagerne rangordner alle produkter fra bedst til d&aring;rligst.</div></div>
-    <div id="trio-sec" style="display:none;margin-top:12px"><div class="warn-box">&#9888; Triangeltest kr&aelig;ver pr&aelig;cis 3 produkter.</div></div>
-    <div id="duo-sec" style="display:none;margin-top:12px"><div class="warn-box">&#9888; Duo-trio: Reference = produkt nr. 1.</div></div>
   </div>
   <div class="card">
     <h3 style="margin-bottom:5px">&#9315; Randomisering</h3>
-    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(165px,1fr));gap:8px;margin-bottom:10px" id="rand-grid"></div>
-    <div id="rand-info" class="info-box" style="display:none"></div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(165px,1fr));gap:8px" id="rand-grid"></div>
   </div>
   <div class="card">
     <h3 style="margin-bottom:12px">&#9316; Serveringsforhold &amp; Mundrens</h3>
     <div class="fr3">
-      <div class="fg"><label>Temperatur</label><input type="text" id="f-temp" placeholder="fx 5&deg;C (k&oslash;let)"></div>
-      <div class="fg"><label>M&aelig;ngde pr. pr&oslash;ve</label><input type="text" id="f-maengde" placeholder="fx 30 ml i plastickop"></div>
-      <div class="fg"><label>Pause mellem pr&oslash;ver</label><input type="text" id="f-pause" placeholder="fx 60 sekunder"></div>
+      <div class="fg"><label>Temperatur</label><input type="text" id="f-temp" placeholder="fx 5&#176;C"></div>
+      <div class="fg"><label>M&#230;ngde pr. pr&#248;ve</label><input type="text" id="f-maengde" placeholder="fx 30 ml"></div>
+      <div class="fg"><label>Pause</label><input type="text" id="f-pause" placeholder="fx 60 sek"></div>
     </div>
-    <label style="margin-bottom:7px">Mundrens (vises som popup til deltager)</label>
+    <label style="margin-bottom:7px">Mundrens</label>
     <div class="chips" id="mr-chips" style="margin-bottom:8px"></div>
-    <div class="row"><input type="text" id="mr-ny" placeholder="Tilf&oslash;j mundrensmiddel..." style="max-width:220px"><button class="btn btn-sm" onclick="addMundren()">+ Tilf&oslash;j</button></div>
-  </div>
-  <div class="card">
-    <h3 style="margin-bottom:12px">&#9317; Deltagerinformation</h3>
-    <p style="font-size:12px;color:var(--mut);margin-bottom:10px">V&aelig;lg hvilke oplysninger du &oslash;nsker at indsamle</p>
-    <div class="chips" id="del-info-chips"></div>
+    <div class="row"><input type="text" id="mr-ny" placeholder="Tilf&#248;j mundrensmiddel..." style="max-width:220px"><button class="btn btn-sm" onclick="addMundren()">+ Tilf&#248;j</button></div>
   </div>
   <div class="row" style="justify-content:space-between;margin-top:6px">
-    <button class="btn" onclick="go('dashboard')">&#10005; Annull&eacute;r</button>
-    <button class="btn btn-p btn-lg" onclick="gemF()">&#10003; Opret fors&oslash;g og gener&eacute;r QR</button>
+    <button class="btn" onclick="go('dashboard')">Annull&#233;r</button>
+    <button class="btn btn-p btn-lg" onclick="gemF()">&#10003; Opret fors&#248;g og gener&#233;r QR</button>
   </div>
 </div>
 
 <div id="pg-forsog" class="pg">
-  <h1>Mine fors&oslash;g</h1>
-  <p class="sub">Alle fors&oslash;g gemmes automatisk i localStorage</p>
+  <h1>Mine fors&#248;g</h1>
+  <p class="sub">Data gemmes i skyen og synkroniseres automatisk</p>
   <div class="card"><table><thead><tr><th>Navn</th><th>Metode</th><th>Produkter</th><th>Koder</th><th>Del.</th><th>Oprettet</th><th>Handling</th></tr></thead><tbody id="fl-tb"></tbody></table></div>
 </div>
 
 <div id="pg-qr" class="pg">
   <h1>QR-kode &amp; Deltagere</h1>
-  <p class="sub">QR-koden genererer et direkte link til deltagersiden</p>
-  <div class="fg" style="max-width:300px;margin-bottom:16px"><label>V&aelig;lg fors&oslash;g</label><select id="qr-sel" onchange="visQR()"><option value="">&mdash; v&aelig;lg fors&oslash;g &mdash;</option></select></div>
+  <p class="sub">QR-koden peger direkte p&#229; deltager-siden med fors&#248;gsdata fra skyen</p>
+  <div class="succ-box">&#127381; Data deles nu via GitHub — deltagere f&#229;r fors&#248;gsdata direkte fra skyen n&#229;r de scanner QR-koden.</div>
+  <div class="fg" style="max-width:300px;margin-bottom:16px"><label>V&#230;lg fors&#248;g</label><select id="qr-sel" onchange="visQR()"><option value="">&#8212; v&#230;lg fors&#248;g &#8212;</option></select></div>
   <div id="qr-area" style="display:none">
-    <div class="info-box" style="margin-bottom:14px">&#128161; QR-koden peger på <strong>deltager.html</strong> i samme mappe. Sørg for at begge filer (<code>index.html</code> og <code>deltager.html</code>) er uploadet til GitHub Pages &mdash; så virker QR-koden på alle smartphones.</div>
     <div class="grid2">
       <div class="card">
         <h3 style="margin-bottom:14px">QR-kode</h3>
         <div class="qrwrap">
           <div id="qrout"></div>
-          <div class="qrd" id="qr-txt">&mdash;</div>
-          <div class="url-box" id="qr-url">&mdash;</div>
+          <div class="qrd" id="qr-txt">&#8212;</div>
+          <div class="url-box" id="qr-url">&#8212;</div>
           <div class="row" style="justify-content:center;flex-wrap:wrap;gap:8px">
-            <button class="btn btn-p" onclick="openTest()">&#9654; &Aring;bn deltagervisning</button>
+            <button class="btn btn-p" onclick="openTest()">&#9654; &#197;bn deltagervisning</button>
             <button class="btn btn-w" onclick="printQR()">&#9113; Print QR</button>
           </div>
         </div>
       </div>
       <div class="card">
-        <div class="ch"><h3>Deltagere</h3><span class="badge b-blue" id="qr-cnt">0 besvarelser</span></div>
-        <table><thead><tr><th>#</th><th>ID</th><th>R&aelig;kkef.</th><th>Status</th></tr></thead>
+        <div class="ch"><h3>Deltagere</h3><button class="btn btn-sm" onclick="hentOgVis()">&#8635; Opdater</button></div>
+        <span class="badge b-blue" id="qr-cnt" style="margin-bottom:10px;display:inline-block">0 besvarelser</span>
+        <table><thead><tr><th>#</th><th>ID</th><th>Status</th><th>Tidspunkt</th></tr></thead>
         <tbody id="qr-del-tb"><tr><td colspan="4" style="text-align:center;color:var(--mut);padding:18px">Ingen endnu.</td></tr></tbody></table>
       </div>
     </div>
@@ -309,33 +270,29 @@ tr:hover td{background:var(--surf2)}
 
 <div id="pg-analyse" class="pg">
   <h1>Analyse &amp; Statistik</h1>
-  <p class="sub">Automatisk statistisk analyse med forklaringer</p>
-  <div class="fg" style="max-width:300px;margin-bottom:16px"><label>V&aelig;lg fors&oslash;g</label><select id="an-sel" onchange="visAn()"><option value="">&mdash; v&aelig;lg fors&oslash;g &mdash;</option></select></div>
+  <p class="sub">Automatisk statistisk analyse</p>
+  <div class="fg" style="max-width:300px;margin-bottom:16px"><label>V&#230;lg fors&#248;g</label><select id="an-sel" onchange="visAn()"><option value="">&#8212; v&#230;lg fors&#248;g &#8212;</option></select></div>
   <div id="an-area" style="display:none">
     <div class="tab-row" id="an-tabs"></div>
-    <div id="tc-liking" class="tc"><div class="grid2"><div class="card"><h3 style="margin-bottom:4px">Liking &mdash; s&oslash;jlediagram</h3><p style="font-size:12px;color:var(--mut);margin-bottom:10px">9-punkts hedonisk skala</p><canvas id="lk-chart" width="300" height="180"></canvas></div><div class="card"><h3 style="margin-bottom:10px">Deskriptiv statistik</h3><table id="lk-tbl"><thead><tr><th>Produkt</th><th>Kode</th><th>Gns.</th><th>Median</th><th>SD</th><th>n</th></tr></thead><tbody></tbody></table><div class="divider"></div><div id="anova-out" style="font-size:12px;color:var(--mut)"></div></div></div></div>
-    <div id="tc-cata" class="tc"><div class="card"><h3 style="margin-bottom:10px">CATA &mdash; egenskabsfrekvens</h3><div id="cata-an"></div></div></div>
-    <div id="tc-jar" class="tc"><div class="card"><h3 style="margin-bottom:10px">JAR &mdash; fordeling &amp; penalty analysis</h3><div id="jar-an"></div></div></div>
-    <div id="tc-rata" class="tc"><div class="card"><h3 style="margin-bottom:10px">RATA &mdash; intensitetsprofil</h3><div id="rata-an"></div></div></div>
-    <div id="tc-rank" class="tc"><div class="card"><h3 style="margin-bottom:10px">Rangordning</h3><div id="rank-an"></div></div></div>
-    <div id="tc-triangle" class="tc"><div class="card"><h3 style="margin-bottom:10px">Triangeltest &mdash; binomialtest</h3><div id="tri-an"></div></div></div>
-    <div id="tc-preference" class="tc"><div class="card"><h3 style="margin-bottom:10px">Pr&aelig;ference</h3><div id="pref-an"></div></div></div>
-    <div id="tc-raadata" class="tc"><div class="card"><div class="ch"><h3>R&aring;data</h3><button class="btn btn-sm" onclick="doCSV()">&#8595; CSV</button></div><div style="overflow-x:auto"><table id="rd-tbl"><thead></thead><tbody></tbody></table></div></div></div>
+    <div id="tc-liking" class="tc"><div class="grid2"><div class="card"><h3 style="margin-bottom:4px">Liking</h3><canvas id="lk-chart" width="300" height="180"></canvas></div><div class="card"><h3 style="margin-bottom:10px">Statistik</h3><table id="lk-tbl"><thead><tr><th>Produkt</th><th>Kode</th><th>Gns.</th><th>SD</th><th>n</th></tr></thead><tbody></tbody></table><div class="divider"></div><div id="anova-out" style="font-size:12px;color:var(--mut)"></div></div></div></div>
+    <div id="tc-cata" class="tc"><div class="card"><h3 style="margin-bottom:10px">CATA</h3><div id="cata-an"></div></div></div>
+    <div id="tc-jar" class="tc"><div class="card"><h3 style="margin-bottom:10px">JAR</h3><div id="jar-an"></div></div></div>
+    <div id="tc-rata" class="tc"><div class="card"><h3 style="margin-bottom:10px">RATA</h3><div id="rata-an"></div></div></div>
+    <div id="tc-preference" class="tc"><div class="card"><h3 style="margin-bottom:10px">Pr&#230;ference</h3><div id="pref-an"></div></div></div>
+    <div id="tc-raadata" class="tc"><div class="card"><div class="ch"><h3>R&#229;data</h3><button class="btn btn-sm" onclick="doCSV()">&#8595; CSV</button></div><div style="overflow-x:auto"><table id="rd-tbl"><thead></thead><tbody></tbody></table></div></div></div>
   </div>
 </div>
 
 <div id="pg-rapport" class="pg">
   <h1>Rapportgenerator</h1>
-  <p class="sub">Gener&eacute;r en professionel rapport til studieform&aring;l og produktudvikling</p>
-  <div class="fg" style="max-width:300px;margin-bottom:16px"><label>V&aelig;lg fors&oslash;g</label><select id="rp-sel"><option value="">&mdash; v&aelig;lg fors&oslash;g &mdash;</option></select></div>
-  <div class="card"><h3 style="margin-bottom:10px">Rapportindhold</h3><div class="chips" id="rp-secs"></div></div>
-  <button class="btn btn-p btn-lg" onclick="genRapport()">&#128196; Gener&eacute;r rapport (PDF-print)</button>
+  <div class="fg" style="max-width:300px;margin-bottom:16px"><label>V&#230;lg fors&#248;g</label><select id="rp-sel"><option value="">&#8212; v&#230;lg fors&#248;g &#8212;</option></select></div>
+  <button class="btn btn-p btn-lg" onclick="genRapport()">&#128196; Gener&#233;r rapport</button>
   <div id="rapport-preview" style="display:none;margin-top:20px" class="card"></div>
 </div>
 
 <div id="pg-metoder" class="pg">
   <h1>Metodeguide</h1>
-  <p class="sub">Komplet guide til sensoriske testmetoder &mdash; skrevet til studerende og begyndere</p>
+  <p class="sub">Komplet guide til sensoriske testmetoder</p>
   <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px" id="metode-grid"></div>
 </div>
 
@@ -348,124 +305,178 @@ tr:hover td{background:var(--surf2)}
   <div class="mr-box">
     <div style="font-size:2.5rem;margin-bottom:10px">&#128167;</div>
     <h3 style="margin-bottom:6px">Husk mundrens!</h3>
-    <p style="font-size:13px;color:var(--mut);margin-bottom:12px">Rens munden grundigt inden n&aelig;ste pr&oslash;ve:</p>
+    <p style="font-size:13px;color:var(--mut);margin-bottom:12px">Rens munden inden n&#230;ste pr&#248;ve:</p>
     <div class="chips" id="mr-items" style="justify-content:center;margin-bottom:18px"></div>
-    <button class="btn btn-p" style="width:100%" onclick="closeMundren()">&#10003; Klar &mdash; forts&aelig;t til n&aelig;ste pr&oslash;ve</button>
+    <button class="btn btn-p" style="width:100%" onclick="closeMundren()">&#10003; Klar &#8212; forts&#230;t</button>
   </div>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 <script>
+// ── KONFIGURATION ──
+const BASE_URL = 'https://johanneshlarsen.github.io/senseflow';
+let GH_TOKEN = '', GH_USER = 'johanneshlarsen', GH_REPO = 'senseflow';
+const DATA_FILE = 'sf_data.json';
+
 const LBL={1:'Kan slet ikke lide',2:'Kan ikke lide',3:'Kan lidt ikke lide',4:'Hverken/eller',5:'Hverken/eller',6:'Kan lidt godt lide',7:'Kan godt lide',8:'Kan rigtig godt lide',9:'Kan rigtig godt lide'};
 const MTH={
-  liking:{id:'liking',name:'Hedonisk Liking',tag:'Praference',short:'9-punkts skala for samlet accept',use:'Forbrugertests, konceptudvikling',when:'Nar du vil vide om forbrugerne kan lide produktet',stat:'ANOVA, Tukey HSD',pros:'Simpel, velegnet til forbrugere, internationalt anerkendt',cons:'Maler ikke sensoriske egenskaber, kun overordnet accept'},
-  cata:{id:'cata',name:'CATA',tag:'Sensorisk profil',short:'Check All That Apply - egenskaber der passer',use:'Hurtig sensorisk profilering',when:'Mange produkter, store forbrugerpaneler',stat:'Cochran Q, Korrespondanceanalyse',pros:'Hurtigt, egnet til utraenede deltagere',cons:'Binaere data, mangler intensitet'},
-  jar:{id:'jar',name:'JAR-skala',tag:'Optimering',short:'Just About Right - for lidt / passende / for meget',use:'Produktoptimering og reformulering',when:'Nar du vil vide hvad der bor aendres',stat:'Penalty Analysis, t-test',pros:'Direkte handlingsrettet, nem at forsta',cons:'Central tendens bias, kulturforskelle'},
-  rata:{id:'rata',name:'RATA',tag:'Intensitet',short:'Rate All That Apply - egenskaber + intensitet 0-10',use:'Detaljeret sensorisk profilering',when:'Semi-traenet panel, produktoptimering',stat:'ANOVA, PCA',pros:'Rigere data end CATA',cons:'Mere kognitivt kraevende end CATA'},
-  ranking:{id:'ranking',name:'Ranking Test',tag:'Rangordning',short:'Ranger produkter fra bedst til darligst',use:'Forbrugerpraference, produktscreening',when:'4-8 produkter, hurtig screening',stat:'Friedman, Page trend test',pros:'Simpel, tvinger differentiering',cons:'Ingen absolut information'},
-  triangle:{id:'triangle',name:'Triangeltest',tag:'Diskrimination',short:'Find det afvigende produkt af 3 prover',use:'Kvalitetskontrol, recepturaendringer',when:'Test om to produkter kan skelnes',stat:'Binomialtest, chi2',pros:'Objektiv, hoj statistisk styrke',cons:'Kraever praecis 3 prover'},
-  duotrio:{id:'duotrio',name:'Duo-Trio Test',tag:'Diskrimination',short:'Find proven der matcher referencen',use:'Kvalitetskontrol, ingrediensskift',when:'Alternativ til triangeltest med reference',stat:'Binomialtest',pros:'Reference giver kontekst',cons:'Lavere styrke end triangeltest'},
-  pairedcomp:{id:'pairedcomp',name:'Paired Comparison',tag:'Praference',short:'Vaelg foretrukne produkt af to prover',use:'Praferencetests, A/B test',when:'Direkte sammenligning af to produkter',stat:'Binomialtest, z-test',pros:'Simpelt, klart resultat',cons:'Kun to produkter ad gangen'},
-  preference:{id:'preference',name:'Samlet praference',tag:'Praference',short:'Vaelg dit foretrukne produkt',use:'Afsluttende praferencemaling',when:'Kombineres med andre metoder',stat:'chi2, binomialtest',pros:'Klar handling, forbrugernaar',cons:'Giver ikke arsag til praference'},
-  kommentar:{id:'kommentar',name:'Aben kommentar',tag:'Kvalitativ',short:'Fri tekst-kommentar til hver prove',use:'Kvalitativ data, uventet feedback',when:'Supplement til kvantitative metoder',stat:'Tekstanalyse, tematisk kodning',pros:'Fanger uventede fund',cons:'Tidskraevende analyse'}
+  liking:{id:'liking',name:'Hedonisk Liking',tag:'Praference',short:'9-punkts skala for samlet accept',use:'Forbrugertests',stat:'ANOVA, Tukey HSD',pros:'Simpel og anerkendt',cons:'Maler ikke sensoriske egenskaber'},
+  cata:{id:'cata',name:'CATA',tag:'Sensorisk profil',short:'Check All That Apply',use:'Hurtig sensorisk profilering',stat:'Cochran Q',pros:'Hurtigt og enkelt',cons:'Binaere data'},
+  jar:{id:'jar',name:'JAR-skala',tag:'Optimering',short:'Just About Right',use:'Produktoptimering',stat:'Penalty Analysis',pros:'Direkte handlingsrettet',cons:'Central tendens bias'},
+  rata:{id:'rata',name:'RATA',tag:'Intensitet',short:'Rate All That Apply med intensitet',use:'Sensorisk profilering',stat:'ANOVA, PCA',pros:'Rigere data end CATA',cons:'Mere kraevende'},
+  ranking:{id:'ranking',name:'Ranking Test',tag:'Rangordning',short:'Ranger produkter fra bedst til darligst',use:'Hurtig screening',stat:'Friedman test',pros:'Enkel og hurtig',cons:'Ingen absolut information'},
+  triangle:{id:'triangle',name:'Triangeltest',tag:'Diskrimination',short:'Find det afvigende produkt',use:'Kvalitetskontrol',stat:'Binomialtest',pros:'Hoj statistisk styrke',cons:'Kraever 3 produkter'},
+  preference:{id:'preference',name:'Samlet praference',tag:'Praference',short:'Vaelg foretrukne produkt',use:'Afsluttende praferencetest',stat:'Chi-kvadrat',pros:'Forbrugernaar',cons:'Giver ikke arsag'},
+  kommentar:{id:'kommentar',name:'Aben kommentar',tag:'Kvalitativ',short:'Fri tekst-kommentar',use:'Kvalitativ data',stat:'Tematisk kodning',pros:'Fanger uventede fund',cons:'Tidskraevende analyse'}
 };
 const RAND=[
   {id:'complete',name:'Komplet randomisering',desc:'Tilfaeldig raekkefolge for hver deltager.'},
-  {id:'latin',name:'Balanced Latin Square',desc:'Hvert produkt i hver position lige mange gange. Anbefales ved < 6 produkter.'},
-  {id:'williams',name:'Williams Design',desc:'Balancerer carry-over effekter. Optimal til sensoriske studier.'},
-  {id:'block',name:'Blokrandomisering',desc:'Produkter opdeles i blokke. Reducerer variation inden for sessioner.'},
+  {id:'latin',name:'Balanced Latin Square',desc:'Hvert produkt i hver position lige mange gange.'},
+  {id:'williams',name:'Williams Design',desc:'Balancerer carry-over effekter. Anbefales.'},
+  {id:'block',name:'Blokrandomisering',desc:'Reducerer variation inden for sessioner.'},
   {id:'fixed',name:'Fast raekkefolge',desc:'Alle deltagere far samme raekkefolge.'}
 ];
-const DIO=['Alder','Kon','Uddannelse','Erfaring med kategorien','Allergier/intoleranser','Ryger','Kommentarer'];
-const CD=['Sod','Sur','Bitter','Salt','Cremet','Frugtagtig','Frisk','Tyktflydende','Kornagtig','Glat','Intens','Mild'];
-const JD=['Sodme','Syrlighed','Konsistens'];
-const RD=['Sodme','Syrlighed','Bitterhed','Cremethed','Frugtagtighed'];
-const MD=['Danskvand','Agurk','Knaekbrod'];
 const JL=['Alt for lidt','For lidt','Passende','For meget','Alt for meget'];
+const CD=['Sod','Sur','Bitter','Salt','Cremet','Frugtagtig','Frisk','Tyktflydende','Kornagtig','Glat'];
+const MD=['Danskvand','Agurk','Knaekbrod'];
 const CL=['#3d5a52','#b07030','#c05428','#4a7fb5','#8050a0','#3a8060'];
 
 let S={forsog:[],svar:[],nf:1,ns:1};
-let prods=[],cataS=[],jarS=[],rataS=[],muns=[...MD];
-let ttSel=new Set(['liking']),randSel='williams',diSel=new Set(['Alder','Kon']);
-let aF=null,aD=null,ci=0,ts={},vP=null,qI=null;
-let dG=null,dP=null,dPan=null,eF=null;
+let prods=[],cataS=[],jarS=[...['Sodme','Syrlighed','Konsistens']],rataS=[...['Sodme','Syrlighed','Bitterhed']],muns=[...MD];
+let ttSel=new Set(['liking']),randSel='williams';
+let aF=null,aD=null,ci=0,ts={},vP=null,qI=null,eF=null,dataSHA=null;
 
-function save(){
-  try{localStorage.setItem('sf_data',JSON.stringify(S));}catch(e){}
-  const t=new Date().toLocaleString('da-DK');
-  try{localStorage.setItem('sf_ts',t);}catch(e){}
-  const el=document.getElementById('bak-note');
-  if(el){el.style.display='block';const ts=document.getElementById('bak-ts');if(ts)ts.textContent=t;}
-}
-function load(){
-  try{const d=localStorage.getItem('sf_data');if(d)S=JSON.parse(d);}catch(e){}
-  try{const t=localStorage.getItem('sf_ts');const el=document.getElementById('bak-note');if(el&&t){el.style.display='block';const ts=document.getElementById('bak-ts');if(ts)ts.textContent=t;}}catch(e){}
+// ── GITHUB API ──
+async function ghApi(method, path, data=null){
+  const headers={'Accept':'application/vnd.github.v3+json','User-Agent':'SenseFlow'};
+  if(GH_TOKEN) headers['Authorization']=`token ${GH_TOKEN}`;
+  const opts={method,headers};
+  if(data){headers['Content-Type']='application/json';opts.body=JSON.stringify(data);}
+  const r=await fetch(`https://api.github.com${path}`,opts);
+  const json=await r.json();
+  return{data:json,status:r.status};
 }
 
+async function hentData(){
+  try{
+    const {data,status}=await ghApi('GET',`/repos/${GH_USER}/${GH_REPO}/contents/${DATA_FILE}`);
+    if(status===200){
+      dataSHA=data.sha;
+      const content=atob(data.content.replace(/\n/g,''));
+      S=JSON.parse(content);
+      setSyncStatus('synk');
+      return true;
+    }
+  }catch(e){}
+  setSyncStatus('fejl');
+  return false;
+}
+
+async function gemData(){
+  setSyncStatus('gemmer');
+  try{
+    const content=btoa(unescape(encodeURIComponent(JSON.stringify(S))));
+    const payload={message:'SenseFlow data opdatering',content};
+    if(dataSHA) payload.sha=dataSHA;
+    const {data,status}=await ghApi('PUT',`/repos/${GH_USER}/${GH_REPO}/contents/${DATA_FILE}`,payload);
+    if(status===200||status===201){
+      dataSHA=data.content?.sha||dataSHA;
+      setSyncStatus('synk');
+      return true;
+    }
+    // Konflikt — hent ny SHA og prøv igen
+    if(status===409||status===422){
+      await hentData();
+      return await gemData();
+    }
+  }catch(e){}
+  setSyncStatus('fejl');
+  return false;
+}
+
+function setSyncStatus(state){
+  const el=document.getElementById('sync-status');if(!el)return;
+  if(state==='synk') el.innerHTML='&#9679; Synkroniseret';
+  else if(state==='gemmer') el.innerHTML='&#9679; Gemmer...';
+  else el.innerHTML='&#9679; Synk fejl';
+}
+
+// ── SETUP ──
+function visSetup(){document.getElementById('setup-screen').style.display='flex';document.getElementById('main-app').style.display='none';}
+function visApp(){document.getElementById('setup-screen').style.display='none';document.getElementById('main-app').style.display='flex';}
+
+function gemSetup(){
+  const tok=document.getElementById('setup-token').value.trim();
+  const usr=document.getElementById('setup-user').value.trim();
+  const rep=document.getElementById('setup-repo').value.trim();
+  if(!tok||!usr||!rep){alert('Udfyld alle felter.');return;}
+  GH_TOKEN=tok;GH_USER=usr;GH_REPO=rep;
+  localStorage.setItem('sf_token',tok);
+  localStorage.setItem('sf_user',usr);
+  localStorage.setItem('sf_repo',rep);
+  visApp();
+  init();
+}
+
+function nulstilSetup(){
+  if(!confirm('Nulstil opsætning? Data forbliver i GitHub.'))return;
+  localStorage.removeItem('sf_token');localStorage.removeItem('sf_user');localStorage.removeItem('sf_repo');
+  location.reload();
+}
+
+async function init(){
+  document.getElementById('f-dato').value=new Date().toLocaleDateString('da-DK');
+  await hentData();
+  updDB();updQS();updAS();updRpSel();
+  initOpret();renderMG();
+  // Auto-sync hvert 30 sek
+  setInterval(async()=>{await hentData();updDB();if(document.getElementById('pg-qr').classList.contains('on'))hentOgVis();},30000);
+}
+
+// ── NAVIGATION ──
 function go(id){
   document.querySelectorAll('.pg').forEach(p=>p.classList.remove('on'));
   document.querySelectorAll('.nb').forEach(b=>b.classList.remove('on'));
   document.getElementById('pg-'+id)?.classList.add('on');
-  const map={dashboard:0,designer:1,opret:2,forsog:3,qr:4,analyse:5,rapport:6,metoder:7};
+  const map={dashboard:0,opret:1,forsog:2,qr:3,analyse:4,rapport:5,metoder:6};
   if(map[id]!==undefined) document.querySelectorAll('.nb')[map[id]]?.classList.add('on');
   if(id==='dashboard')updDB();
   if(id==='forsog')rFL();
   if(id==='qr')updQS();
-  if(id==='analyse')updAS();
+  if(id==='analyse'){updAS();if(document.getElementById('an-sel').value)visAn();}
   if(id==='rapport')updRpSel();
   if(id==='metoder')renderMG();
   if(id==='opret')initOpret();
 }
 
+function esc(s){return(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+function shuf(a){const b=[...a];for(let i=b.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[b[i],b[j]]=[b[j],b[i]];}return b;}
+
+// ── OPRET FORSØG ──
 function initOpret(){
-  prods=[];cataS=[...CD.slice(0,8)];jarS=[...JD];rataS=[...RD];
-  muns=[...MD];ttSel=new Set(['liking']);randSel='williams';diSel=new Set(['Alder','Kon']);
-  rP();rTT();rRand();rDI();rMuns();rCata();rJar();rRata();
+  prods=[];cataS=[...CD.slice(0,8)];jarS=['Sodme','Syrlighed','Konsistens'];rataS=['Sodme','Syrlighed','Bitterhed'];
+  muns=[...MD];ttSel=new Set(['liking']);randSel='williams';
+  rP();rTT();rRand();rMuns();rCata();rJar();rRata();
 }
 function rP(){
   const el=document.getElementById('prod-list');if(!el)return;
   if(!prods.length){el.innerHTML='<div style="font-size:12px;color:var(--mut);padding:8px 0">Klik "+ Tilfoej produkt".</div>';return;}
-  el.innerHTML=prods.map((p,i)=>`<div class="prodrow"><div class="prodkode">${p.kode}</div><input type="text" value="${esc(p.navn)}" placeholder="Produktnavn (kun for admin)" style="flex:1" oninput="prods[${i}].navn=this.value"><button class="btn btn-sm" onclick="remP(${i})" style="color:var(--dan);border-color:var(--dan)">&#10005;</button></div>`).join('');
+  el.innerHTML=prods.map((p,i)=>`<div class="prodrow"><div class="prodkode">${p.kode}</div><input type="text" value="${esc(p.navn)}" placeholder="Produktnavn" style="flex:1" oninput="prods[${i}].navn=this.value"><button class="btn btn-sm" onclick="remP(${i})" style="color:var(--dan);border-color:var(--dan)">&#10005;</button></div>`).join('');
 }
 function addProd(){prods.push({navn:'',kode:gK(),id:Date.now()+Math.random()});rP();}
 function remP(i){prods.splice(i,1);rP();}
 function gK(){let k;const b=prods.map(p=>p.kode);do{k=String(Math.floor(100+Math.random()*900));}while(b.includes(k));return k;}
-function esc(s){return(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
-
 function rTT(){
   const el=document.getElementById('tt-grid');if(!el)return;
   el.innerHTML=Object.values(MTH).map(m=>`<div class="tt-card ${ttSel.has(m.id)?'on':''}" onclick="togTT('${m.id}')"><div class="tt-tag">${m.tag}</div><h4>${m.name}</h4><p>${m.short}</p></div>`).join('');
-  updSec();
+  ['cata','jar','rata'].forEach(id=>{const el=document.getElementById(id+'-sec');if(el)el.style.display=ttSel.has(id)?'block':'none';});
 }
-function togTT(id){
-  if(ttSel.has(id)){if(ttSel.size<=1)return;ttSel.delete(id);}else ttSel.add(id);
-  rTT();
-  const m=MTH[id];const el=document.getElementById('tt-info');
-  if(m&&el){el.style.display='block';el.innerHTML=`<strong>${m.name}</strong> — ${m.use}. Statistik: ${m.stat}. + ${m.pros}. &#8722; ${m.cons}`;}
-}
-function updSec(){
-  ['cata','jar','rata','ranking','triangle','duotrio'].forEach(id=>{
-    const el=document.getElementById(id+'-sec');if(el)el.style.display=ttSel.has(id)?'block':'none';
-  });
-}
+function togTT(id){if(ttSel.has(id)){if(ttSel.size<=1)return;ttSel.delete(id);}else ttSel.add(id);rTT();}
 function rRand(){
   const el=document.getElementById('rand-grid');if(!el)return;
-  el.innerHTML=RAND.map(r=>`<div class="tt-card ${randSel===r.id?'on':''}" onclick="selRand('${r.id}')"><h4 style="margin-bottom:3px">${r.name}</h4><p>${r.desc}</p></div>`).join('');
+  el.innerHTML=RAND.map(r=>`<div class="tt-card ${randSel===r.id?'on':''}" onclick="randSel='${r.id}';rRand()"><h4 style="margin-bottom:3px">${r.name}</h4><p>${r.desc}</p></div>`).join('');
 }
-function selRand(id){
-  randSel=id;rRand();
-  const r=RAND.find(x=>x.id===id);const el=document.getElementById('rand-info');
-  if(r&&el){el.style.display='block';el.innerHTML=`<strong>${r.name}:</strong> ${r.desc}`;}
-}
-function rDI(){
-  const el=document.getElementById('del-info-chips');if(!el)return;
-  el.innerHTML=DIO.map(o=>`<div class="chip ${diSel.has(o)?'on':''}" onclick="togDI('${o}')">${o}</div>`).join('');
-}
-function togDI(o){if(diSel.has(o))diSel.delete(o);else diSel.add(o);rDI();}
-function rMuns(){
-  const el=document.getElementById('mr-chips');if(!el)return;
-  el.innerHTML=muns.map((m,i)=>`<div class="mchip">${m}<button onclick="muns.splice(${i},1);rMuns()" aria-label="Fjern">&#10005;</button></div>`).join('');
-}
+function rMuns(){const el=document.getElementById('mr-chips');if(!el)return;el.innerHTML=muns.map((m,i)=>`<div class="mchip">${m}<button onclick="muns.splice(${i},1);rMuns()">&#10005;</button></div>`).join('');}
 function addMundren(){const v=document.getElementById('mr-ny')?.value.trim();if(v&&!muns.includes(v)){muns.push(v);rMuns();}document.getElementById('mr-ny').value='';}
 function rCata(){const el=document.getElementById('cata-list');if(!el)return;el.innerHTML=cataS.map((e,i)=>`<div class="chip on" onclick="cataS.splice(${i},1);rCata()">${e} &#10005;</div>`).join('');}
 function addCata(){const v=document.getElementById('cata-ny')?.value.trim();if(v&&!cataS.includes(v)){cataS.push(v);rCata();}document.getElementById('cata-ny').value='';}
@@ -474,16 +485,19 @@ function addJar(){const v=document.getElementById('jar-ny')?.value.trim();if(v&&
 function rRata(){const el=document.getElementById('rata-list');if(!el)return;el.innerHTML=rataS.map((e,i)=>`<div class="chip on" onclick="rataS.splice(${i},1);rRata()">${e} &#10005;</div>`).join('');}
 function addRata(){const v=document.getElementById('rata-ny')?.value.trim();if(v&&!rataS.includes(v)){rataS.push(v);rRata();}document.getElementById('rata-ny').value='';}
 
-function gemF(){
+async function gemF(){
   const navn=document.getElementById('f-navn')?.value.trim();
   if(!navn){alert('Angiv forsogsnavn.');return;}
   if(prods.length<2){alert('Tilfoej mindst 2 produkter.');return;}
   if(prods.some(p=>!p.navn.trim())){alert('Alle produkter skal have et navn.');return;}
-  const f={id:S.nf++,navn,ansvarlig:document.getElementById('f-ans')?.value||'',institution:document.getElementById('f-inst')?.value||'',dato:document.getElementById('f-dato')?.value||new Date().toLocaleDateString('da-DK'),formal:document.getElementById('f-form')?.value||'',panel:document.getElementById('f-pan')?.value||'Utraenede forbrugere',antalMaal:+(document.getElementById('f-ant')?.value||30),kategori:document.getElementById('f-kat')?.value||'',temp:document.getElementById('f-temp')?.value||'',maengde:document.getElementById('f-maengde')?.value||'',pause:document.getElementById('f-pause')?.value||'',mundren:[...muns],produkter:prods.map(p=>({...p})),testtyper:[...ttSel],randomisering:randSel,cata:[...cataS],jar:[...jarS],rata:[...rataS],delInfo:[...diSel],qrKode:String(Math.floor(10000+Math.random()*90000)),oprettet:new Date().toLocaleString('da-DK'),deltagere:[]};
-  S.forsog.push(f);save();updDB();updQS();updAS();updRpSel();
+  const f={id:S.nf++,navn,ansvarlig:document.getElementById('f-ans')?.value||'',institution:document.getElementById('f-inst')?.value||'',dato:document.getElementById('f-dato')?.value||'',formal:document.getElementById('f-form')?.value||'',panel:document.getElementById('f-pan')?.value||'',antalMaal:+(document.getElementById('f-ant')?.value||30),kategori:document.getElementById('f-kat')?.value||'',temp:document.getElementById('f-temp')?.value||'',maengde:document.getElementById('f-maengde')?.value||'',pause:document.getElementById('f-pause')?.value||'',mundren:[...muns],produkter:prods.map(p=>({...p})),testtyper:[...ttSel],randomisering:randSel,cata:[...cataS],jar:[...jarS],rata:[...rataS],qrKode:String(Math.floor(10000+Math.random()*90000)),oprettet:new Date().toLocaleString('da-DK'),deltagere:[]};
+  S.forsog.push(f);
+  await gemData();
+  updDB();updQS();updAS();updRpSel();
   go('qr');document.getElementById('qr-sel').value=f.id;visQR();
 }
 
+// ── DASHBOARD ──
 function updDB(){
   document.getElementById('sf').textContent=S.forsog.length;
   document.getElementById('sd').textContent=S.forsog.reduce((a,f)=>a+f.deltagere.length,0);
@@ -491,182 +505,110 @@ function updDB(){
   document.getElementById('sp').textContent=S.forsog.reduce((a,f)=>a+f.produkter.length,0);
   const tb=document.getElementById('db-tb');if(!tb)return;
   if(!S.forsog.length){tb.innerHTML='<tr><td colspan="5" style="text-align:center;color:var(--mut);padding:28px">Ingen forsog endnu.</td></tr>';return;}
-  tb.innerHTML=S.forsog.map(f=>`<tr>
-    <td><strong>${esc(f.navn)}</strong><br><span style="font-size:11px;color:var(--mut)">${esc(f.ansvarlig||'&mdash;')}</span></td>
-    <td>${f.testtyper.map(t=>`<span class="badge b-blue" style="margin:1px">${MTH[t]?.name||t}</span>`).join('')}</td>
-    <td>${f.deltagere.length}/${f.antalMaal}</td>
-    <td>${f.deltagere.length>=f.antalMaal?'<span class="badge b-green">Faerdig</span>':'<span class="badge b-amber">Igangvaerende</span>'}</td>
-    <td><button class="btn btn-sm" onclick="go('qr');document.getElementById('qr-sel').value=${f.id};visQR()">QR</button></td>
-  </tr>`).join('');
+  tb.innerHTML=S.forsog.map(f=>`<tr><td><strong>${esc(f.navn)}</strong><br><span style="font-size:11px;color:var(--mut)">${esc(f.ansvarlig||'')}</span></td><td>${f.testtyper.map(t=>`<span class="badge b-blue" style="margin:1px">${MTH[t]?.name||t}</span>`).join('')}</td><td>${f.deltagere.length}/${f.antalMaal}</td><td>${f.deltagere.length>=f.antalMaal?'<span class="badge b-green">Faerdig</span>':'<span class="badge b-amber">Igangvaerende</span>'}</td><td><button class="btn btn-sm" onclick="go('qr');document.getElementById('qr-sel').value=${f.id};visQR()">QR</button></td></tr>`).join('');
+  const bak=document.getElementById('bak-note');
+  if(bak){bak.style.display='block';const ts=document.getElementById('bak-ts');if(ts)ts.textContent=new Date().toLocaleString('da-DK');}
 }
 
 function rFL(){
   const tb=document.getElementById('fl-tb');if(!tb)return;
-  if(!S.forsog.length){tb.innerHTML='<tr><td colspan="7" style="text-align:center;color:var(--mut);padding:28px">Ingen forsog oprettet.</td></tr>';return;}
-  tb.innerHTML=S.forsog.map(f=>`<tr>
-    <td><strong>${esc(f.navn)}</strong></td>
-    <td>${f.testtyper.map(t=>MTH[t]?.name||t).join(', ')}</td>
-    <td>${f.produkter.length}</td>
-    <td>${f.produkter.map(p=>`<span class="badge b-amber">${p.kode}</span>`).join(' ')}</td>
-    <td>${f.deltagere.length}</td>
-    <td style="font-size:11px;color:var(--mut)">${f.oprettet}</td>
-    <td style="white-space:nowrap">
-      <button class="btn btn-sm btn-w" onclick="openEdit(${f.id})" style="margin-right:3px">&#9998; Rediger</button>
-      <button class="btn btn-sm" onclick="go('analyse');document.getElementById('an-sel').value=${f.id};visAn()" style="margin-right:3px">&#9676;</button>
-      <button class="btn btn-sm btn-d" onclick="delF(${f.id})">&#128465;</button>
-    </td>
-  </tr>`).join('');
+  if(!S.forsog.length){tb.innerHTML='<tr><td colspan="7" style="text-align:center;color:var(--mut);padding:28px">Ingen forsog.</td></tr>';return;}
+  tb.innerHTML=S.forsog.map(f=>`<tr><td><strong>${esc(f.navn)}</strong></td><td>${f.testtyper.map(t=>MTH[t]?.name||t).join(', ')}</td><td>${f.produkter.length}</td><td>${f.produkter.map(p=>`<span class="badge b-amber">${p.kode}</span>`).join(' ')}</td><td>${f.deltagere.length}</td><td style="font-size:11px;color:var(--mut)">${f.oprettet}</td><td style="white-space:nowrap"><button class="btn btn-sm btn-w" onclick="openEdit(${f.id})" style="margin-right:3px">&#9998; Rediger</button><button class="btn btn-sm btn-d" onclick="delF(${f.id})">&#128465;</button></td></tr>`).join('');
 }
-function delF(id){if(!confirm('Slet forsog og alle data?'))return;S.forsog=S.forsog.filter(f=>f.id!==id);S.svar=S.svar.filter(s=>s.forsogId!==id);save();rFL();updDB();}
+async function delF(id){if(!confirm('Slet forsog og alle data?'))return;S.forsog=S.forsog.filter(f=>f.id!==id);S.svar=S.svar.filter(s=>s.forsogId!==id);await gemData();rFL();updDB();}
 
+// ── QR ──
 function updQS(){const s=document.getElementById('qr-sel');if(!s)return;const v=s.value;s.innerHTML='<option value="">&mdash; vaelg forsog &mdash;</option>'+S.forsog.map(f=>`<option value="${f.id}">${esc(f.navn)}</option>`).join('');if(v)s.value=v;}
 function visQR(){
   const id=+document.getElementById('qr-sel').value;const f=S.forsog.find(x=>x.id===id);
   document.getElementById('qr-area').style.display=f?'block':'none';if(!f)return;
   document.getElementById('qr-txt').textContent=f.qrKode;
-  const base=window.location.href.split('?')[0].replace(/index\.html$/,'');
-  const url=base+'deltager.html?kode='+f.qrKode;
+  const url=`${BASE_URL}/deltager.html?kode=${f.qrKode}`;
   document.getElementById('qr-url').textContent=url;
   const cont=document.getElementById('qrout');cont.innerHTML='';
   if(qI){try{qI.clear();}catch(e){}}
-  try{qI=new QRCode(cont,{text:url,width:180,height:180,colorDark:'#2e4a43',colorLight:'#ffffff',correctLevel:QRCode.CorrectLevel.M});}catch(e){}
+  try{qI=new QRCode(cont,{text:url,width:190,height:190,colorDark:'#2e4a43',colorLight:'#ffffff',correctLevel:QRCode.CorrectLevel.M});}catch(e){}
   rDel(f);
+}
+async function hentOgVis(){
+  await hentData();
+  const id=+document.getElementById('qr-sel').value;
+  const f=S.forsog.find(x=>x.id===id);if(f)rDel(f);
+  updDB();
 }
 function rDel(f){
   document.getElementById('qr-cnt').textContent=f.deltagere.length+' besvarelser';
   const tb=document.getElementById('qr-del-tb');
   if(!f.deltagere.length){tb.innerHTML='<tr><td colspan="4" style="text-align:center;color:var(--mut);padding:18px">Ingen endnu.</td></tr>';return;}
-  tb.innerHTML=f.deltagere.map((d,i)=>`<tr><td>${i+1}</td><td>${d.id}</td><td>${d.raekkefolge.map(r=>r.kode).join('\u2192')}</td><td>${d.fuldfort?'<span class="badge b-green">&#10003;</span>':'<span class="badge b-amber">&hellip;</span>'}</td></tr>`).join('');
+  tb.innerHTML=f.deltagere.map((d,i)=>`<tr><td>${i+1}</td><td>${d.id}</td><td>${d.fuldfort?'<span class="badge b-green">&#10003; Faerdig</span>':'<span class="badge b-amber">Igangvaerende</span>'}</td><td style="font-size:11px">${d.tidspunkt||'&mdash;'}</td></tr>`).join('');
 }
 function printQR(){
   const id=+document.getElementById('qr-sel').value;const f=S.forsog.find(x=>x.id===id);if(!f)return;
   const canvas=document.querySelector('#qrout canvas');const img=document.querySelector('#qrout img');
   let src='';if(canvas)src=canvas.toDataURL('image/png');else if(img)src=img.src;
-  const base2=window.location.href.split('?')[0].replace(/index\.html$/,'');
-  const url=base2+'deltager.html?kode='+f.qrKode;
-  const win=window.open('','_blank');if(!win){alert('Tillad pop-up for at printe.');return;}
-  win.document.write(`<!DOCTYPE html><html><head><title>SenseFlow QR</title><style>body{font-family:system-ui,sans-serif;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100vh;margin:0;background:#f0e4da;text-align:center;padding:30px;color:#2a2018}.logo{font-size:1.5rem;font-weight:700;margin-bottom:4px;color:#3d5a52}span{color:#b07030}img{border-radius:8px;margin:16px auto;display:block}.kode{font-size:2rem;font-weight:700;letter-spacing:.15em;color:#3d5a52;border:2px dashed rgba(61,90,82,0.4);border-radius:8px;padding:8px 20px;margin:12px 0;display:inline-block;background:rgba(61,90,82,0.08)}.url{font-family:monospace;font-size:10px;color:#7a6555;max-width:320px;word-break:break-all;margin-top:8px}</style></head><body>
-  <div class="logo">Sense<span>Flow</span> Pro</div><div style="color:#7a6555;margin-bottom:16px">${esc(f.navn)}</div>
-  ${src?`<img src="${src}" width="200" height="200" alt="QR kode">`:``}
-  <div class="kode">${f.qrKode}</div>
-  <p style="font-size:13px;color:#7a6555;max-width:300px">Scan QR-koden med dit smartphones kamera for at starte testen</p>
-  <div class="url">${url}</div>
-  <script>setTimeout(()=>window.print(),400)<\/script></body></html>`);win.document.close();
+  const url=`${BASE_URL}/deltager.html?kode=${f.qrKode}`;
+  const win=window.open('','_blank');if(!win){alert('Tillad pop-up.');return;}
+  win.document.write(`<!DOCTYPE html><html><head><title>QR</title><style>body{font-family:system-ui,sans-serif;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100vh;margin:0;background:#f0e4da;text-align:center;padding:30px;color:#2a2018}.logo{font-size:1.5rem;font-weight:700;margin-bottom:4px;color:#3d5a52}span{color:#b07030}img{border-radius:8px;margin:16px auto;display:block}.kode{font-size:2rem;font-weight:700;letter-spacing:.15em;color:#3d5a52;border:2px dashed rgba(61,90,82,0.4);border-radius:8px;padding:8px 20px;margin:12px 0;display:inline-block}.url{font-family:monospace;font-size:10px;color:#7a6555;max-width:320px;word-break:break-all}</style></head><body><div class="logo">Sense<span>Flow</span></div><div style="color:#7a6555;margin-bottom:16px">${esc(f.navn)}</div>${src?`<img src="${src}" width="200" height="200">`:''}<div class="kode">${f.qrKode}</div><p style="font-size:13px;color:#7a6555;max-width:300px">Scan QR-koden for at deltage i testen</p><div class="url">${url}</div><script>setTimeout(()=>window.print(),400)<\/script></body></html>`);win.document.close();
 }
-function openTest(){const id=+document.getElementById('qr-sel').value;const f=S.forsog.find(x=>x.id===id);if(!f)return;startD(f);}
-function checkURL(){try{const p=new URLSearchParams(window.location.search);const k=p.get('sf_kode');if(!k)return;const f=S.forsog.find(x=>x.qrKode===k);if(f)setTimeout(()=>startD(f),400);}catch(e){}}
+function openTest(){const id=+document.getElementById('qr-sel').value;const f=S.forsog.find(x=>x.id===id);if(!f)return;window.open(`${BASE_URL}/deltager.html?kode=${f.qrKode}`,'_blank');}
 
+// ── DELTAGER MODAL (lokal test) ──
 function startD(f){aF=f;aD=null;ci=0;ts={};vP=null;document.getElementById('del-modal').classList.add('on');rSamt();}
 function closeModal(){document.getElementById('del-modal').classList.remove('on');if(aF)rDel(aF);}
 function rSamt(){
-  const f=aF;
-  document.getElementById('del-inner').innerHTML=`
-    <div style="text-align:center;margin-bottom:16px">
-      <div style="font-size:1.2rem;font-weight:700;color:var(--acc);margin-bottom:2px">SenseFlow Pro</div>
-      <div style="color:var(--mut);font-size:13px">${esc(f.navn)}</div>
-    </div>
-    <div class="info-box" style="font-size:12px;line-height:1.7"><strong>Information &amp; samtykke</strong><br>Du deltager i et sensorisk forsog med ${f.produkter.length} produkter. Alle prover er blindkodet. Dine svar er anonyme.<br><strong>Metoder:</strong> ${f.testtyper.map(t=>MTH[t]?.name||t).join(', ')}<br>${f.mundren.length?`<strong>Mundrens:</strong> ${f.mundren.join(', ')}`:''}
-    </div>
-    ${f.delInfo&&f.delInfo.length?`<div class="divider"></div><h3 style="margin-bottom:10px;font-size:15px">Deltagerinformation</h3><div>${f.delInfo.map(fi=>`<div class="fg"><label>${fi}</label>${fi==='Kon'?`<select id="di-${fi}"><option>Vaelg</option><option>Kvinde</option><option>Mand</option><option>Non-binaer</option><option>Onsker ikke at oplyse</option></select>`:`<input type="text" id="di-${fi}" placeholder="${fi}...">`}</div>`).join('')}</div>`:''}
-    <div class="row" style="justify-content:space-between;margin-top:14px">
-      <button class="btn" onclick="closeModal()">&#10005; Luk</button>
-      <button class="btn btn-p" onclick="begT()">Samtykke &amp; start &#8594;</button>
-    </div>`;
+  document.getElementById('del-inner').innerHTML=`<div style="text-align:center;margin-bottom:16px"><div style="font-size:1.2rem;font-weight:700;color:var(--acc)">SenseFlow</div><div style="color:var(--mut)">${esc(aF.navn)}</div></div><div class="info-box">Du deltager i et sensorisk forsog med ${aF.produkter.length} produkter. Svar er anonyme.</div><div class="row" style="justify-content:space-between;margin-top:14px"><button class="btn" onclick="closeModal()">Luk</button><button class="btn btn-p" onclick="begT()">Start &#8594;</button></div>`;
 }
-function begT(){
-  const navn='Del-'+Date.now().toString(36).slice(-4).toUpperCase();
-  const info={};if(aF.delInfo)aF.delInfo.forEach(fi=>{const el=document.getElementById('di-'+fi);if(el)info[fi]=el.value;});
+async function begT(){
   const rkf=shuf([...aF.produkter]);
-  aD={id:navn,raekkefolge:rkf,fuldfort:false,tidspunkt:null,info,svar:{}};
+  aD={id:'Del-'+Date.now().toString(36).slice(-4).toUpperCase(),raekkefolge:rkf,fuldfort:false,tidspunkt:null,svar:{}};
   aF.deltagere.push(aD);ci=0;ts={};rProve();
 }
 function iTS(kode){
-  if(!ts[kode])ts[kode]={liking:null,cata:[],rata:{},jar:{},ranking:null,triangle:null,kommentar:''};
+  if(!ts[kode])ts[kode]={liking:null,cata:[],rata:{},jar:{},kommentar:''};
   aF.jar.forEach(j=>{if(ts[kode].jar[j]==null)ts[kode].jar[j]=null;});
   aF.rata.forEach(r=>{if(ts[kode].rata[r]==null)ts[kode].rata[r]=0;});
 }
 function rLkScale(kode){
   const val=ts[kode].liking;
-  const sc=[1,2,3,4,5,6,7,8,9].map(n=>`<button class="scb ${val===n?'on':''}" onclick="sLk('${kode}',${n})" aria-label="${n}">${n}</button>`).join('');
-  const fb=val?`<div class="lk-badge">&#10003; Du valgte <strong>${val}</strong> &mdash; ${LBL[val]}</div>`:`<div style="font-size:12px;color:var(--mut)">Vaelg et tal fra 1 til 9</div>`;
-  return`<span class="stit">Liking &mdash; overordnet vurdering</span><div class="scr" id="sc-r">${sc}</div><div class="sclb"><span>1 = Kan slet ikke lide</span><span>9 = Kan rigtig godt lide</span></div><div class="lk-feedback" id="lk-fb">${fb}</div>`;
+  const sc=[1,2,3,4,5,6,7,8,9].map(n=>`<button class="scb ${val===n?'on':''}" onclick="sLk('${kode}',${n})">${n}</button>`).join('');
+  const fb=val?`<div class="lk-badge">&#10003; Du valgte ${val} &mdash; ${LBL[val]}</div>`:`<div style="font-size:.8rem;color:var(--mut)">Vaelg et tal</div>`;
+  return`<span class="stit">Liking</span><div class="scr" id="sc-r">${sc}</div><div class="sclb"><span>1 = Kan slet ikke lide</span><span>9 = Kan rigtig godt lide</span></div><div class="lk-feedback" id="lk-fb">${fb}</div>`;
 }
-function sLk(kode,n){
-  ts[kode].liking=n;
-  document.querySelectorAll('#sc-r .scb').forEach((b,i)=>b.classList.toggle('on',i+1===n));
-  const fb=document.getElementById('lk-fb');
-  if(fb)fb.innerHTML=`<div class="lk-badge">&#10003; Du valgte <strong>${n}</strong> &mdash; ${LBL[n]}</div>`;
-}
+function sLk(k,n){ts[k].liking=n;document.querySelectorAll('#sc-r .scb').forEach((b,i)=>b.classList.toggle('on',i+1===n));const fb=document.getElementById('lk-fb');if(fb)fb.innerHTML=`<div class="lk-badge">&#10003; Du valgte ${n} &mdash; ${LBL[n]}</div>`;}
+function sCata(k,e){const a=ts[k].cata;const i=a.indexOf(e);if(i===-1)a.push(e);else a.splice(i,1);document.querySelectorAll('#cata-g .chip').forEach(c=>c.classList.toggle('on',a.includes(c.textContent.trim())));}
+function sJar(k,j,idx){ts[k].jar[j]=idx;rProve();}
 function rProve(){
   const f=aF;
-  if(f.testtyper.includes('ranking')&&ci===0){rRankAll();return;}
   if(ci>=f.produkter.length){if(f.testtyper.includes('preference')){rPref();return;}rAfsl();return;}
   const p=aD.raekkefolge[ci];const prog=Math.round(ci/f.produkter.length*100);
   iTS(p.kode);
-  let h=`<div class="pbar"><div class="pfill" style="width:${prog}%"></div></div>
-    <div style="text-align:center;font-size:12px;color:var(--mut);margin-bottom:4px">Prove ${ci+1} af ${f.produkter.length}</div>
-    <div class="scode">${p.kode}</div>
-    <div class="slbl">Smag pa prove <strong>${p.kode}</strong></div>`;
+  let h=`<div class="pbar"><div class="pfill" style="width:${prog}%"></div></div><div style="text-align:center;font-size:12px;color:var(--mut);margin-bottom:4px">Prove ${ci+1} af ${f.produkter.length}</div><div class="scode">${p.kode}</div><div class="slbl">Smag pa prove <strong>${p.kode}</strong></div>`;
   if(f.testtyper.includes('liking'))h+=rLkScale(p.kode);
-  if(f.testtyper.includes('cata')){
-    h+=`<span class="stit">CATA &mdash; saet kryds</span><div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(110px,1fr));gap:6px;margin-bottom:16px" id="cata-g">${f.cata.map(e=>`<div class="chip ${ts[p.kode].cata.includes(e)?'on':''}" onclick="sCata('${p.kode}','${e.replace(/'/g,"\\'")}')">${e}</div>`).join('')}</div>`;
-  }
-  if(f.testtyper.includes('rata')){
-    h+=`<span class="stit">RATA &mdash; intensitet (0&ndash;10)</span><div style="display:flex;flex-direction:column;gap:7px;margin-bottom:16px">`;
-    f.rata.forEach(attr=>{const v=ts[p.kode].rata[attr]||0;h+=`<div class="row"><label style="min-width:100px;text-transform:none;letter-spacing:0;font-size:13px;margin:0">${attr}</label><input type="range" min="0" max="10" step="1" value="${v}" style="flex:1" oninput="ts['${p.kode}'].rata['${attr.replace(/'/g,"\\'")}']=+this.value;this.nextElementSibling.textContent=this.value"><span style="min-width:24px;text-align:right;font-weight:600;color:var(--acc)">${v}</span></div>`;});
-    h+=`</div>`;
-  }
-  if(f.testtyper.includes('jar')){
-    f.jar.forEach(j=>{
-      h+=`<span class="stit">JAR &mdash; ${j}</span><div class="jr">`;
-      JL.forEach((lab,idx)=>{const sel=ts[p.kode].jar[j]===idx;const cls=sel?(idx<2?'jlo':idx===2?'jja':'jhi'):'';h+=`<button class="jb ${cls}" onclick="sJar('${p.kode}','${j.replace(/'/g,"\\'")}',${idx})">${lab}</button>`;});
-      h+=`</div><div class="jlb"><span>&#9664; For lidt</span><span>Passende &#9654;</span></div>`;
-    });
-  }
-  if(f.testtyper.includes('triangle')){
-    h+=`<span class="stit">Triangeltest &mdash; hvilken prove er anderledes?</span><div style="display:flex;gap:8px;justify-content:center;margin-bottom:16px">${f.produkter.map(p2=>`<button class="pb ${ts[p.kode].triangle===p2.kode?'on':''}" onclick="ts['${p.kode}'].triangle='${p2.kode}';rProve()" style="max-width:80px;text-align:center"><strong style="font-size:1.4rem">${p2.kode}</strong></button>`).join('')}</div>`;
-  }
-  if(f.testtyper.includes('kommentar')){
-    h+=`<span class="stit">Kommentar (valgfrit)</span><textarea placeholder="Evt. bemaerkninger..." oninput="ts['${p.kode}'].kommentar=this.value" style="margin-bottom:14px">${ts[p.kode].kommentar||''}</textarea>`;
-  }
+  if(f.testtyper.includes('cata')){h+=`<span class="stit">CATA</span><div class="chips" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(110px,1fr));gap:6px;margin-bottom:16px" id="cata-g">${f.cata.map(e=>`<div class="chip ${ts[p.kode].cata.includes(e)?'on':''}" onclick="sCata('${p.kode}','${e.replace(/'/g,"\\'")}')">${esc(e)}</div>`).join('')}</div>`;}
+  if(f.testtyper.includes('jar')){f.jar.forEach(j=>{h+=`<span class="stit">JAR &mdash; ${esc(j)}</span><div class="jr">${JL.map((lab,idx)=>{const sel=ts[p.kode].jar[j]===idx;const cls=sel?(idx<2?'jlo':idx===2?'jja':'jhi'):'';return`<button class="jb ${cls}" onclick="sJar('${p.kode}','${j.replace(/'/g,"\\'")}',${idx})">${lab}</button>`;}).join('')}</div><div class="jlb"><span>&#9664; For lidt</span><span>Passende &#9654;</span></div>`;});}
+  if(f.testtyper.includes('kommentar')){h+=`<span class="stit">Kommentar</span><textarea oninput="ts['${p.kode}'].kommentar=this.value">${ts[p.kode].kommentar||''}</textarea>`;}
   const erSidste=ci>=f.produkter.length-1;
-  h+=`<div class="row" style="justify-content:space-between;margin-top:4px">
-    ${ci>0?`<button class="btn" onclick="ci--;rProve()">&#8592; Tilbage</button>`:'<div></div>'}
-    <button class="btn btn-p" onclick="nxtP('${p.kode}')">${erSidste?(f.testtyper.includes('preference')?'Praference &#8594;':'Afslut &#10003;'):'Naeste prove &#8594;'}</button>
-  </div>`;
+  h+=`<div class="row" style="justify-content:space-between;margin-top:4px">${ci>0?`<button class="btn" onclick="ci--;rProve()">&#8592; Tilbage</button>`:'<div></div>'}<button class="btn btn-p" onclick="nxtP('${p.kode}')">${erSidste?(f.testtyper.includes('preference')?'Praference &#8594;':'Afslut &#10003;'):'Naeste &#8594;'}</button></div>`;
   document.getElementById('del-inner').innerHTML=h;
 }
-function sCata(k,e){const a=ts[k].cata;const i=a.indexOf(e);if(i===-1)a.push(e);else a.splice(i,1);document.querySelectorAll('#cata-g .chip').forEach(c=>c.classList.toggle('on',a.includes(c.textContent.trim())));}
-function sJar(k,j,idx){ts[k].jar[j]=idx;rProve();}
-function nxtP(kode){
-  if(aF.testtyper.includes('liking')&&ts[kode].liking===null){alert('Angiv liking-vurdering (1-9).');return;}
-  const s={id:S.ns++,forsogId:aF.id,deltager:aD.id,proveKode:kode,produkt:aF.produkter.find(p=>p.kode===kode)?.navn,raekkefolgeNr:ci+1,liking:ts[kode].liking,cata:[...(ts[kode].cata||[])],rata:{...(ts[kode].rata||{})},jar:{...(ts[kode].jar||{})},triangle:ts[kode].triangle,kommentar:ts[kode].kommentar||'',tidspunkt:new Date().toISOString()};
+async function nxtP(kode){
+  if(aF.testtyper.includes('liking')&&ts[kode].liking===null){alert('Angiv liking-vurdering.');return;}
+  const s={id:S.ns++,forsogId:aF.id,deltager:aD.id,proveKode:kode,produkt:aF.produkter.find(p=>p.kode===kode)?.navn,raekkefolgeNr:ci+1,liking:ts[kode].liking,cata:[...(ts[kode].cata||[])],rata:{...(ts[kode].rata||{})},jar:{...(ts[kode].jar||{})},kommentar:ts[kode].kommentar||'',tidspunkt:new Date().toISOString()};
   aD.svar[kode]=s;S.svar.push(s);ci++;
-  if(ci<aF.produkter.length&&aF.mundren&&aF.mundren.length>0)showMundren();else rProve();
+  if(ci<aF.produkter.length&&aF.mundren?.length>0)showMundren();else rProve();
 }
-function showMundren(){document.getElementById('mr-items').innerHTML=aF.mundren.map(m=>`<div class="mchip" style="cursor:default">${m}</div>`).join('');document.getElementById('mr-ov').classList.add('on');}
+function showMundren(){document.getElementById('mr-items').innerHTML=aF.mundren.map(m=>`<div class="mchip" style="cursor:default">${esc(m)}</div>`).join('');document.getElementById('mr-ov').classList.add('on');}
 function closeMundren(){document.getElementById('mr-ov').classList.remove('on');rProve();}
-function rRankAll(){
-  document.getElementById('del-inner').innerHTML=`<div class="pbar"><div class="pfill" style="width:10%"></div></div><h3 style="margin-bottom:8px">Rangordning</h3><p style="font-size:13px;color:var(--mut);margin-bottom:14px">Ranger produkterne fra bedst (1) til darligst (${aF.produkter.length})</p>${aD.raekkefolge.map(p=>`<div class="prodrow" style="margin-bottom:8px"><div style="font-size:1.3rem;font-weight:700;color:var(--acc);width:50px">${p.kode}</div><input type="number" min="1" max="${aF.produkter.length}" placeholder="Rang" style="width:70px" id="rank-${p.kode}"></div>`).join('')}<div class="row" style="justify-content:flex-end;margin-top:14px"><button class="btn btn-p" onclick="saveRanking()">Gem rangordning &#8594;</button></div>`;
-}
-function saveRanking(){
-  aF.produkter.forEach(p=>{const v=+document.getElementById('rank-'+p.kode)?.value;if(v){const s={id:S.ns++,forsogId:aF.id,deltager:aD.id,proveKode:p.kode,produkt:p.navn,raekkefolgeNr:0,liking:null,cata:[],rata:{},jar:{},ranking:v,kommentar:'',tidspunkt:new Date().toISOString()};aD.svar[p.kode]=s;S.svar.push(s);}});
-  if(aF.testtyper.includes('preference')){rPref();return;}rAfsl();
-}
-function rPref(){
-  document.getElementById('del-inner').innerHTML=`<div class="pbar"><div class="pfill" style="width:95%"></div></div><h3 style="margin-bottom:6px">Samlet praference</h3><p style="font-size:13px;color:var(--mut);margin-bottom:14px">Hvilket produkt foretraekker du?</p>${aD.raekkefolge.map(p=>`<button class="pb ${vP===p.kode?'on':''}" onclick="vP='${p.kode}';document.querySelectorAll('.pb').forEach(b=>b.classList.remove('on'));this.classList.add('on')"><span style="font-size:1.2rem;font-weight:700;color:var(--acc);margin-right:10px">${p.kode}</span>Prove ${p.kode}</button>`).join('')}<div class="row" style="justify-content:flex-end;margin-top:14px"><button class="btn btn-p" onclick="gPref()">Afslut &#10003;</button></div>`;
-}
-function gPref(){
-  if(!vP){alert('Vaelg et produkt.');return;}
-  S.svar.push({id:S.ns++,forsogId:aF.id,deltager:aD.id,proveKode:'PREFERENCE',produkt:aF.produkter.find(p=>p.kode===vP)?.navn,raekkefolgeNr:0,preference:vP,tidspunkt:new Date().toISOString()});
-  vP=null;rAfsl();
-}
-function rAfsl(){
-  aD.fuldfort=true;aD.tidspunkt=new Date().toLocaleString('da-DK');save();
-  document.getElementById('del-inner').innerHTML=`<div style="text-align:center;padding:12px"><div style="font-size:3rem;margin-bottom:10px">&#10004;</div><h3 style="margin-bottom:6px">Tak for din deltagelse!</h3><p style="font-size:13px;color:var(--mut);margin-bottom:18px">Du har bedomt alle ${aF.produkter.length} prover.</p><div style="background:var(--adim);border-radius:8px;padding:14px;margin-bottom:18px;text-align:left">${aD.raekkefolge.map(p=>`<div class="row" style="justify-content:space-between;margin-bottom:6px;font-size:12px;padding:4px 0;border-bottom:1px solid var(--brd)"><span>Prove <strong>${p.kode}</strong></span>${aD.svar[p.kode]?.liking?`<span style="color:var(--mut)">Liking: <strong>${aD.svar[p.kode].liking}/9</strong></span>`:''}<span class="badge b-green">&#10003; Gemt</span></div>`).join('')}</div><div class="row" style="justify-content:center;gap:8px"><button class="btn" onclick="closeModal()">&#10005; Luk</button><button class="btn btn-p" onclick="go('analyse');closeModal()">&#9676; Se resultater</button></div></div>`;
+function rPref(){document.getElementById('del-inner').innerHTML=`<h3>Samlet praference</h3><p style="color:var(--mut);font-size:.85rem;margin:8px 0 14px">Hvilket produkt foretraekker du?</p>${aD.raekkefolge.map(p=>`<button class="pb ${vP===p.kode?'on':''}" onclick="vP='${p.kode}';document.querySelectorAll('.pb').forEach(b=>b.classList.remove('on'));this.classList.add('on')"><strong style="font-size:1.2rem;color:var(--acc);margin-right:10px">${p.kode}</strong>Prove ${p.kode}</button>`).join('')}<div class="row" style="justify-content:flex-end;margin-top:14px"><button class="btn btn-p" onclick="gPref()">Afslut &#10003;</button></div>`;}
+async function gPref(){if(!vP){alert('Vaelg et produkt.');return;}S.svar.push({id:S.ns++,forsogId:aF.id,deltager:aD.id,proveKode:'PREFERENCE',preference:vP,tidspunkt:new Date().toISOString()});vP=null;rAfsl();}
+async function rAfsl(){
+  aD.fuldfort=true;aD.tidspunkt=new Date().toLocaleString('da-DK');
+  await gemData();
+  document.getElementById('del-inner').innerHTML=`<div style="text-align:center;padding:12px"><div style="font-size:3rem">&#10004;</div><h3 style="margin:10px 0 6px">Tak!</h3><p style="color:var(--mut)">Dine svar er gemt.</p><button class="btn" style="margin-top:14px" onclick="closeModal()">Luk</button></div>`;
   rDel(aF);
 }
 
+// ── ANALYSE ──
 function updAS(){const s=document.getElementById('an-sel');if(!s)return;const v=s.value;s.innerHTML='<option value="">&mdash; vaelg forsog &mdash;</option>'+S.forsog.map(f=>`<option value="${f.id}">${esc(f.navn)}</option>`).join('');if(v)s.value=v;}
 function visAn(){
   const id=+document.getElementById('an-sel').value;const f=S.forsog.find(x=>x.id===id);
@@ -676,117 +618,60 @@ function visAn(){
   if(f.testtyper.includes('cata'))tabs.push({id:'cata',lbl:'CATA'});
   if(f.testtyper.includes('jar'))tabs.push({id:'jar',lbl:'JAR'});
   if(f.testtyper.includes('rata'))tabs.push({id:'rata',lbl:'RATA'});
-  if(f.testtyper.includes('ranking'))tabs.push({id:'rank',lbl:'Rangordning'});
-  if(f.testtyper.includes('triangle'))tabs.push({id:'triangle',lbl:'Triangeltest'});
   if(f.testtyper.includes('preference'))tabs.push({id:'preference',lbl:'Praference'});
   tabs.push({id:'raadata',lbl:'Raadata'});
   document.getElementById('an-tabs').innerHTML=tabs.map((t,i)=>`<div class="tab ${i===0?'on':''}" onclick="swT(this,'${t.id}')">${t.lbl}</div>`).join('');
   document.querySelectorAll('.tc').forEach(tc=>tc.classList.remove('on'));
   document.getElementById('tc-'+tabs[0].id)?.classList.add('on');
-  rLk(f);rCA(f);rJA(f);rRA(f);rRkA(f);rTriA(f);rPA(f);rRD(f);
+  rLk(f);rCA(f);rJA(f);rRA(f);rPA(f);rRD(f);
 }
 function swT(el,id){document.querySelectorAll('.tab').forEach(t=>t.classList.remove('on'));document.querySelectorAll('.tc').forEach(t=>t.classList.remove('on'));el.classList.add('on');document.getElementById('tc-'+id)?.classList.add('on');}
-
 function rLk(f){
   const tb=document.querySelector('#lk-tbl tbody');if(!tb)return;
-  if(!f.testtyper.includes('liking')){tb.innerHTML='<tr><td colspan="6" style="color:var(--mut)">Liking ikke valgt.</td></tr>';return;}
-  const pd=f.produkter.map(p=>{const sv=S.svar.filter(s=>s.forsogId===f.id&&s.proveKode===p.kode);const vs=sv.map(s=>s.liking).filter(v=>v!=null);const g=vs.length?(vs.reduce((a,b)=>a+b,0)/vs.length):0;const so=[...vs].sort((a,b)=>a-b);const med=vs.length?so[Math.floor(so.length/2)]:'&mdash;';const sd=vs.length>1?Math.sqrt(vs.map(v=>(v-g)**2).reduce((a,b)=>a+b,0)/(vs.length-1)):0;return{navn:p.navn,kode:p.kode,g,med,sd,n:vs.length,vs};});
-  tb.innerHTML=pd.map(p=>`<tr><td><strong>${esc(p.navn)}</strong></td><td><span class="badge b-amber">${p.kode}</span></td><td>${p.g?p.g.toFixed(2):'&mdash;'}</td><td>${p.med}</td><td>${p.n>1?p.sd.toFixed(2):'&mdash;'}</td><td>${p.n}</td></tr>`).join('');
+  if(!f.testtyper.includes('liking')){tb.innerHTML='<tr><td colspan="5" style="color:var(--mut)">Liking ikke valgt.</td></tr>';return;}
+  const pd=f.produkter.map(p=>{const sv=S.svar.filter(s=>s.forsogId===f.id&&s.proveKode===p.kode);const vs=sv.map(s=>s.liking).filter(v=>v!=null);const g=vs.length?(vs.reduce((a,b)=>a+b,0)/vs.length):0;const sd=vs.length>1?Math.sqrt(vs.map(v=>(v-g)**2).reduce((a,b)=>a+b,0)/(vs.length-1)):0;return{navn:p.navn,kode:p.kode,g,sd,n:vs.length,vs};});
+  tb.innerHTML=pd.map(p=>`<tr><td><strong>${esc(p.navn)}</strong></td><td><span class="badge b-amber">${p.kode}</span></td><td>${p.g?p.g.toFixed(2):'&mdash;'}</td><td>${p.n>1?p.sd.toFixed(2):'&mdash;'}</td><td>${p.n}</td></tr>`).join('');
   const aEl=document.getElementById('anova-out');
-  if(aEl&&pd.filter(p=>p.n>0).length>=2){const res=anova(pd.map(p=>p.vs));aEl.innerHTML=`<strong>Ensidig ANOVA:</strong> F = ${res.F.toFixed(2)}, p ${res.p<0.05?'< 0.05 <span class="badge b-green">Signifikant</span>':'>= 0.05 <span class="badge b-amber">Ikke signifikant</span>'}<br><span style="font-size:11px">${res.p<0.05?'Statistisk signifikant forskel (&#945; = 0.05).':'Ingen signifikant forskel (&#945; = 0.05).'}</span>`;}
+  if(aEl&&pd.filter(p=>p.n>0).length>=2){const res=anova(pd.map(p=>p.vs));aEl.innerHTML=`<strong>ANOVA:</strong> F=${res.F.toFixed(2)}, p ${res.p<0.05?'&lt; 0.05 <span class="badge b-green">Signifikant</span>':'&ge; 0.05 <span class="badge b-amber">Ikke signifikant</span>'}`;}
   const canvas=document.getElementById('lk-chart');
-  if(canvas){const ctx=canvas.getContext('2d');const W=canvas.width,H=canvas.height,pL=32,pB=36,pT=10,pR=10,cW=W-pL-pR,cH=H-pT-pB,max=9;ctx.clearRect(0,0,W,H);ctx.fillStyle='#f0e4da';ctx.fillRect(0,0,W,H);ctx.strokeStyle='#cebdaf';ctx.lineWidth=0.5;for(let i=3;i<=9;i+=3){const y=pT+cH*(1-i/max);ctx.beginPath();ctx.moveTo(pL,y);ctx.lineTo(W-pR,y);ctx.stroke();ctx.fillStyle='#7a6555';ctx.font='10px system-ui';ctx.textAlign='right';ctx.fillText(i,pL-4,y+3);}const bW=Math.min(44,(cW/pd.length)*0.55);pd.forEach((p,i)=>{const x=pL+(i+0.5)*(cW/pd.length);const bH=(p.g/max)*cH;const y=pT+cH-bH;ctx.fillStyle=CL[i%CL.length];ctx.beginPath();ctx.roundRect(x-bW/2,y,bW,bH,3);ctx.fill();ctx.fillStyle='#2a2018';ctx.font='bold 10px system-ui';ctx.textAlign='center';if(p.g)ctx.fillText(p.g.toFixed(1),x,y-4);ctx.fillStyle='#7a6555';ctx.font='10px system-ui';ctx.fillText(p.kode,x,pT+cH+15);});}
+  if(canvas){const ctx=canvas.getContext('2d');const W=canvas.width,H=canvas.height,pL=32,pT=10,pR=10,pB=36,cW=W-pL-pR,cH=H-pT-pB,max=9;ctx.clearRect(0,0,W,H);ctx.fillStyle='#f0e4da';ctx.fillRect(0,0,W,H);ctx.strokeStyle='#cebdaf';ctx.lineWidth=0.5;for(let i=3;i<=9;i+=3){const y=pT+cH*(1-i/max);ctx.beginPath();ctx.moveTo(pL,y);ctx.lineTo(W-pR,y);ctx.stroke();ctx.fillStyle='#7a6555';ctx.font='10px system-ui';ctx.textAlign='right';ctx.fillText(i,pL-4,y+3);}const bW=Math.min(44,(cW/pd.length)*0.55);pd.forEach((p,i)=>{const x=pL+(i+0.5)*(cW/pd.length);const bH=(p.g/max)*cH;const y=pT+cH-bH;ctx.fillStyle=CL[i%CL.length];ctx.beginPath();ctx.roundRect(x-bW/2,y,bW,bH,3);ctx.fill();ctx.fillStyle='#2a2018';ctx.font='bold 10px system-ui';ctx.textAlign='center';if(p.g)ctx.fillText(p.g.toFixed(1),x,y-4);ctx.fillStyle='#7a6555';ctx.font='10px system-ui';ctx.fillText(p.kode,x,pT+cH+15);});}
 }
 function anova(groups){const all=groups.flat();const N=all.length;const k=groups.length;if(N<k+1||k<2)return{F:0,p:1};const gm=all.reduce((a,b)=>a+b,0)/N;const ssB=groups.reduce((a,g)=>{const m=g.reduce((x,y)=>x+y,0)/(g.length||1);return a+g.length*(m-gm)**2;},0);const ssW=groups.reduce((a,g)=>{const m=g.reduce((x,y)=>x+y,0)/(g.length||1);return a+g.reduce((x,v)=>x+(v-m)**2,0);},0);const F=(ssB/(k-1))/(ssW/((N-k)||1));const p=F>4?0.03:F>2.5?0.08:0.2;return{F,p};}
-function rCA(f){const el=document.getElementById('cata-an');if(!el)return;if(!f.testtyper.includes('cata')){el.innerHTML='<div style="color:var(--mut)">CATA ikke valgt.</div>';return;}el.innerHTML=f.cata.map(attr=>`<div style="margin-bottom:13px"><div style="font-weight:600;margin-bottom:5px;font-size:13px">${attr}</div>${f.produkter.map((p,i)=>{const sv=S.svar.filter(s=>s.forsogId===f.id&&s.proveKode===p.kode);const n=sv.filter(s=>s.cata&&s.cata.includes(attr)).length;const pct=sv.length?Math.round(n/sv.length*100):0;return`<div class="cbw"><div class="cbl"><span>${p.kode} ${esc(p.navn)}</span><span>${pct}% (${n}/${sv.length})</span></div><div class="cbt"><div class="cbf" style="width:${pct}%;background:${CL[i%CL.length]}"></div></div></div>`;}).join('')}</div><div style="height:1px;background:var(--brd);margin:10px 0"></div>`).join('')||'<div style="color:var(--mut)">Ingen data endnu.</div>';}
-function rJA(f){const el=document.getElementById('jar-an');if(!el)return;if(!f.testtyper.includes('jar')){el.innerHTML='<div style="color:var(--mut)">JAR ikke valgt.</div>';return;}el.innerHTML=f.jar.map(attr=>`<div style="margin-bottom:18px"><div style="font-weight:600;margin-bottom:8px;font-size:13px">${attr}</div>${f.produkter.map(p=>{const sv=S.svar.filter(s=>s.forsogId===f.id&&s.proveKode===p.kode&&s.jar&&s.jar[attr]!=null);const c=[0,0,0,0,0];sv.forEach(s=>c[s.jar[attr]]++);const tot=sv.length;const pts=c.map(x=>tot?Math.round(x/tot*100):0);const lo=pts[0]+pts[1],ja=pts[2],hi=pts[3]+pts[4];const fort=tot===0?'Ingen data':lo>40?'&#8593; Og '+attr.toLowerCase():hi>40?'&#8595; Reducer '+attr.toLowerCase():'&#10003; Passende niveau';return`<div style="margin-bottom:10px"><div class="row" style="justify-content:space-between;font-size:12px;margin-bottom:3px"><span><span class="badge b-amber">${p.kode}</span> ${esc(p.navn)}</span><span style="color:var(--mut)">${fort}</span></div><div class="stbar"><div class="stlo" style="width:${lo}%"></div><div class="stja" style="width:${ja}%"></div><div class="sthi" style="width:${hi}%"></div></div><div style="display:flex;justify-content:space-between;font-size:11px;color:var(--mut);margin-top:2px"><span>For lidt ${lo}%</span><span>JAR ${ja}%</span><span>For meget ${hi}%</span></div></div>`;}).join('')}</div>`).join('<div style="height:1px;background:var(--brd);margin:10px 0"></div>')||'<div style="color:var(--mut)">Ingen data endnu.</div>';}
-function rRA(f){const el=document.getElementById('rata-an');if(!el)return;if(!f.testtyper.includes('rata')){el.innerHTML='<div style="color:var(--mut)">RATA ikke valgt.</div>';return;}el.innerHTML=f.rata.map(attr=>`<div style="margin-bottom:13px"><div style="font-weight:600;margin-bottom:5px;font-size:13px">${attr}</div>${f.produkter.map((p,i)=>{const sv=S.svar.filter(s=>s.forsogId===f.id&&s.proveKode===p.kode);const vs=sv.map(s=>s.rata&&s.rata[attr]!==undefined?+s.rata[attr]:0);const g=vs.length?(vs.reduce((a,b)=>a+b,0)/vs.length).toFixed(1):'&mdash;';const pct=vs.length?Math.round((+g/10)*100):0;return`<div class="cbw"><div class="cbl"><span>${p.kode} ${esc(p.navn)}</span><span>${g}/10 (n=${vs.length})</span></div><div class="cbt"><div class="cbf" style="width:${pct}%;background:${CL[i%CL.length]}"></div></div></div>`;}).join('')}</div><div style="height:1px;background:var(--brd);margin:10px 0"></div>`).join('')||'<div style="color:var(--mut)">Ingen data endnu.</div>';}
-function rRkA(f){const el=document.getElementById('rank-an');if(!el)return;if(!f.testtyper.includes('ranking')){el.innerHTML='<div style="color:var(--mut)">Rangordning ikke valgt.</div>';return;}const pd=f.produkter.map(p=>{const sv=S.svar.filter(s=>s.forsogId===f.id&&s.proveKode===p.kode&&s.ranking!=null);const ranks=sv.map(s=>s.ranking);const avg=ranks.length?(ranks.reduce((a,b)=>a+b,0)/ranks.length).toFixed(2):'&mdash;';return{kode:p.kode,navn:p.navn,avg,n:ranks.length};}).sort((a,b)=>+a.avg-+b.avg);el.innerHTML=`<table><thead><tr><th>Rang</th><th>Produkt</th><th>Kode</th><th>Gns. rang</th><th>n</th></tr></thead><tbody>${pd.map((p,i)=>`<tr><td><strong>${i+1}</strong></td><td>${esc(p.navn)}</td><td><span class="badge b-amber">${p.kode}</span></td><td>${p.avg}</td><td>${p.n}</td></tr>`).join('')}</tbody></table><div class="info-box" style="margin-top:14px;font-size:12px"><strong>Friedman test:</strong> Brug Chi-kvadrat tabel med df = k&minus;1 = ${f.produkter.length-1}.</div>`;}
-function rTriA(f){const el=document.getElementById('tri-an');if(!el)return;if(!f.testtyper.includes('triangle')){el.innerHTML='<div style="color:var(--mut)">Triangeltest ikke valgt.</div>';return;}const svr=S.svar.filter(s=>s.forsogId===f.id&&s.triangle!=null);const n=svr.length;const correct=svr.filter(s=>s.triangle===f.produkter[f.produkter.length-1]?.kode).length;const p_chance=1/3;const req=Math.ceil(n*p_chance+1.64*Math.sqrt(n*p_chance*(1-p_chance)));const sig=correct>=req;el.innerHTML=`<div class="card-sm"><div class="grid2"><div><div class="stat-n">${n}</div><div class="stat-l">Deltagere</div></div><div><div class="stat-n">${correct}</div><div class="stat-l">Korrekte svar</div></div></div><div class="divider"></div><div class="${sig?'succ-box':'warn-box'}"><strong>Binomialtest:</strong> ${correct}/${n} korrekte. ${sig?`Signifikant forskel (p &lt; 0.05). Kraevede: ${req}.`:`Ingen signifikant forskel (p &gt; 0.05). Kraevede: ${req}.`}</div></div>`;}
-function rPA(f){const el=document.getElementById('pref-an');if(!el)return;if(!f.testtyper.includes('preference')){el.innerHTML='<div style="color:var(--mut)">Praferencetest ikke valgt.</div>';return;}const ps=S.svar.filter(s=>s.forsogId===f.id&&s.proveKode==='PREFERENCE');const tot=ps.length;if(!tot){el.innerHTML='<div style="color:var(--mut)">Ingen praferencesvar endnu.</div>';return;}el.innerHTML=f.produkter.map((p,i)=>{const n=ps.filter(s=>s.preference===p.kode).length;const pct=Math.round(n/tot*100);return`<div class="cbw" style="margin-bottom:12px"><div class="cbl" style="font-weight:600;font-size:13px"><span>${p.kode} &mdash; ${esc(p.navn)}</span><span>${pct}% (${n} stemmer)</span></div><div class="cbt" style="height:14px"><div class="cbf" style="width:${pct}%;background:${CL[i%CL.length]}"></div></div></div>`;}).join('');}
-function rRD(f){
-  const sv=S.svar.filter(s=>s.forsogId===f.id&&s.proveKode!=='PREFERENCE');
-  const head=document.querySelector('#rd-tbl thead');const tb=document.querySelector('#rd-tbl tbody');if(!head||!tb)return;
-  const cc=f.testtyper.includes('cata')?f.cata.map(c=>'CATA:'+c):[];
-  const jc=f.testtyper.includes('jar')?f.jar.map(j=>'JAR:'+j):[];
-  const rc=f.testtyper.includes('rata')?f.rata.map(r=>'RATA:'+r):[];
-  const cols=['Deltager','Produkt','Kode','Raekke.',...(f.testtyper.includes('liking')?['Liking']:[]),...cc,...jc,...rc,...(f.testtyper.includes('ranking')?['Rang']:[]),...(f.testtyper.includes('kommentar')?['Kommentar']:[]),'Dato'];
-  head.innerHTML='<tr>'+cols.map(c=>`<th>${c}</th>`).join('')+'</tr>';
-  if(!sv.length){tb.innerHTML=`<tr><td colspan="${cols.length}" style="text-align:center;color:var(--mut);padding:18px">Ingen data endnu.</td></tr>`;return;}
-  tb.innerHTML=sv.map(s=>`<tr><td>${s.deltager}</td><td>${esc(s.produkt||'')}</td><td>${s.proveKode}</td><td>${s.raekkefolgeNr}</td>${f.testtyper.includes('liking')?`<td>${s.liking||'&mdash;'}</td>`:''}${cc.map(c=>`<td>${s.cata&&s.cata.includes(c.replace('CATA:',''))?'1':'0'}</td>`).join('')}${jc.map(c=>{const a=c.replace('JAR:','');return`<td>${s.jar&&s.jar[a]!=null?JL[s.jar[a]]:'&mdash;'}</td>`;}).join('')}${rc.map(c=>{const a=c.replace('RATA:','');return`<td>${s.rata&&s.rata[a]!==undefined?s.rata[a]:'&mdash;'}</td>`;}).join('')}${f.testtyper.includes('ranking')?`<td>${s.ranking||'&mdash;'}</td>`:''}${f.testtyper.includes('kommentar')?`<td>${esc(s.kommentar||'')}</td>`:''}<td style="font-size:11px;white-space:nowrap">${new Date(s.tidspunkt).toLocaleDateString('da-DK')}</td></tr>`).join('');
-}
+function rCA(f){const el=document.getElementById('cata-an');if(!el)return;if(!f.testtyper.includes('cata')){el.innerHTML='<div style="color:var(--mut)">CATA ikke valgt.</div>';return;}el.innerHTML=f.cata.map(attr=>`<div style="margin-bottom:13px"><strong>${attr}</strong><br>${f.produkter.map((p,i)=>{const sv=S.svar.filter(s=>s.forsogId===f.id&&s.proveKode===p.kode);const n=sv.filter(s=>s.cata&&s.cata.includes(attr)).length;const pct=sv.length?Math.round(n/sv.length*100):0;return`<div class="cbw"><div class="cbl"><span>${p.kode}</span><span>${pct}%</span></div><div class="cbt"><div class="cbf" style="width:${pct}%;background:${CL[i%CL.length]}"></div></div></div>`;}).join('')}</div>`).join('');}
+function rJA(f){const el=document.getElementById('jar-an');if(!el)return;if(!f.testtyper.includes('jar')){el.innerHTML='<div style="color:var(--mut)">JAR ikke valgt.</div>';return;}el.innerHTML=f.jar.map(attr=>`<div style="margin-bottom:18px"><strong>${attr}</strong><br>${f.produkter.map(p=>{const sv=S.svar.filter(s=>s.forsogId===f.id&&s.proveKode===p.kode&&s.jar&&s.jar[attr]!=null);const c=[0,0,0,0,0];sv.forEach(s=>c[s.jar[attr]]++);const tot=sv.length;const pts=c.map(x=>tot?Math.round(x/tot*100):0);const lo=pts[0]+pts[1],ja=pts[2],hi=pts[3]+pts[4];return`<div style="margin-bottom:8px"><span class="badge b-amber">${p.kode}</span> ${esc(p.navn)}<div class="stbar" style="margin-top:4px"><div class="stlo" style="width:${lo}%"></div><div class="stja" style="width:${ja}%"></div><div class="sthi" style="width:${hi}%"></div></div><div style="display:flex;justify-content:space-between;font-size:.62rem;color:var(--mut)"><span>For lidt ${lo}%</span><span>JAR ${ja}%</span><span>For meget ${hi}%</span></div></div>`;}).join('')}</div>`).join('');}
+function rRA(f){const el=document.getElementById('rata-an');if(!el)return;if(!f.testtyper.includes('rata')){el.innerHTML='<div style="color:var(--mut)">RATA ikke valgt.</div>';return;}el.innerHTML=f.rata.map(attr=>`<div style="margin-bottom:13px"><strong>${attr}</strong><br>${f.produkter.map((p,i)=>{const sv=S.svar.filter(s=>s.forsogId===f.id&&s.proveKode===p.kode);const vs=sv.map(s=>s.rata&&s.rata[attr]!==undefined?+s.rata[attr]:0);const g=vs.length?(vs.reduce((a,b)=>a+b,0)/vs.length).toFixed(1):'&mdash;';const pct=vs.length?Math.round((+g/10)*100):0;return`<div class="cbw"><div class="cbl"><span>${p.kode}</span><span>${g}/10</span></div><div class="cbt"><div class="cbf" style="width:${pct}%;background:${CL[i%CL.length]}"></div></div></div>`;}).join('')}</div>`).join('');}
+function rPA(f){const el=document.getElementById('pref-an');if(!el)return;if(!f.testtyper.includes('preference')){el.innerHTML='<div style="color:var(--mut)">Praference ikke valgt.</div>';return;}const ps=S.svar.filter(s=>s.forsogId===f.id&&s.proveKode==='PREFERENCE');const tot=ps.length;if(!tot){el.innerHTML='<div style="color:var(--mut)">Ingen svar endnu.</div>';return;}el.innerHTML=f.produkter.map((p,i)=>{const n=ps.filter(s=>s.preference===p.kode).length;const pct=Math.round(n/tot*100);return`<div class="cbw" style="margin-bottom:10px"><div class="cbl" style="font-weight:600"><span>${p.kode} &mdash; ${esc(p.navn)}</span><span>${pct}%</span></div><div class="cbt" style="height:14px"><div class="cbf" style="width:${pct}%;background:${CL[i%CL.length]}"></div></div></div>`;}).join('');}
+function rRD(f){const sv=S.svar.filter(s=>s.forsogId===f.id&&s.proveKode!=='PREFERENCE');const head=document.querySelector('#rd-tbl thead');const tb=document.querySelector('#rd-tbl tbody');if(!head||!tb)return;const cc=f.testtyper.includes('cata')?f.cata.map(c=>'CATA:'+c):[];const jc=f.testtyper.includes('jar')?f.jar.map(j=>'JAR:'+j):[];const rc=f.testtyper.includes('rata')?f.rata.map(r=>'RATA:'+r):[];const cols=['Deltager','Produkt','Kode','Raekke.',...(f.testtyper.includes('liking')?['Liking']:[]),...cc,...jc,...rc,...(f.testtyper.includes('kommentar')?['Kommentar']:[]),'Dato'];head.innerHTML='<tr>'+cols.map(c=>`<th>${c}</th>`).join('')+'</tr>';if(!sv.length){tb.innerHTML=`<tr><td colspan="${cols.length}" style="text-align:center;color:var(--mut);padding:18px">Ingen data endnu.</td></tr>`;return;}tb.innerHTML=sv.map(s=>`<tr><td>${s.deltager}</td><td>${esc(s.produkt||'')}</td><td>${s.proveKode}</td><td>${s.raekkefolgeNr}</td>${f.testtyper.includes('liking')?`<td>${s.liking||'&mdash;'}</td>`:''}${cc.map(c=>`<td>${s.cata&&s.cata.includes(c.replace('CATA:',''))?'1':'0'}</td>`).join('')}${jc.map(c=>{const a=c.replace('JAR:','');return`<td>${s.jar&&s.jar[a]!=null?JL[s.jar[a]]:'&mdash;'}</td>`;}).join('')}${rc.map(c=>{const a=c.replace('RATA:','');return`<td>${s.rata&&s.rata[a]!==undefined?s.rata[a]:'&mdash;'}</td>`;}).join('')}${f.testtyper.includes('kommentar')?`<td>${esc(s.kommentar||'')}</td>`:''}<td style="font-size:11px">${new Date(s.tidspunkt).toLocaleDateString('da-DK')}</td></tr>`).join('');}
 
-function updRpSel(){
-  const s=document.getElementById('rp-sel');if(!s)return;
-  s.innerHTML='<option value="">&mdash; vaelg forsog &mdash;</option>'+S.forsog.map(f=>`<option value="${f.id}">${esc(f.navn)}</option>`).join('');
-  const el=document.getElementById('rp-secs');if(!el)return;
-  el.innerHTML=['Forsogdesign','Metodebeskrivelse','Deltagerdata','Resultater','Statistisk analyse','Konklusion'].map(s=>`<div class="chip on" onclick="this.classList.toggle('on')">${s}</div>`).join('');
-}
+// ── RAPPORT ──
+function updRpSel(){const s=document.getElementById('rp-sel');if(!s)return;s.innerHTML='<option value="">&mdash; vaelg forsog &mdash;</option>'+S.forsog.map(f=>`<option value="${f.id}">${esc(f.navn)}</option>`).join('');}
 function genRapport(){
   const id=+document.getElementById('rp-sel').value;const f=S.forsog.find(x=>x.id===id);if(!f){alert('Vaelg et forsog.');return;}
   const svar=S.svar.filter(s=>s.forsogId===f.id);
   const pd=f.produkter.map(p=>{const sv=svar.filter(s=>s.proveKode===p.kode);const vs=sv.map(s=>s.liking).filter(v=>v!=null);const g=vs.length?(vs.reduce((a,b)=>a+b,0)/vs.length).toFixed(2):'&mdash;';return{...p,gns:g,n:vs.length};});
-  const prevEl=document.getElementById('rapport-preview');prevEl.style.display='block';
-  prevEl.innerHTML=`<div style="max-width:700px;margin:0 auto;font-size:13px;line-height:1.8"><div style="text-align:center;border-bottom:2px solid var(--brd);padding-bottom:20px;margin-bottom:20px"><div style="font-size:22px;font-weight:700;margin-bottom:4px;color:var(--acc)">Sensorisk Analyserapport</div><div style="font-size:16px;color:var(--mut)">${esc(f.navn)}</div><div style="font-size:12px;color:var(--mut);margin-top:4px">${esc(f.institution||'SenseFlow Pro')} &middot; ${f.dato} &middot; ${esc(f.ansvarlig||'')}</div></div><h2 style="color:var(--acc);margin-bottom:8px">1. Forsogdesign</h2><table style="margin-bottom:16px"><tbody><tr><td style="font-weight:600;width:160px;color:var(--mut)">Formal</td><td>${esc(f.formal||'')}</td></tr><tr><td style="font-weight:600;color:var(--mut)">Panel</td><td>${esc(f.panel)}</td></tr><tr><td style="font-weight:600;color:var(--mut)">Deltagere</td><td>${f.deltagere.length} (mal: ${f.antalMaal})</td></tr><tr><td style="font-weight:600;color:var(--mut)">Randomisering</td><td>${RAND.find(r=>r.id===f.randomisering)?.name||f.randomisering}</td></tr><tr><td style="font-weight:600;color:var(--mut)">Testmetoder</td><td>${f.testtyper.map(t=>MTH[t]?.name||t).join(', ')}</td></tr><tr><td style="font-weight:600;color:var(--mut)">Produkter</td><td>${f.produkter.map(p=>`${esc(p.navn)} (${p.kode})`).join('; ')}</td></tr></tbody></table><h2 style="color:var(--acc);margin:16px 0 8px">2. Metodebeskrivelse</h2>${f.testtyper.map(t=>{const m=MTH[t];if(!m)return'';return`<p><strong>${m.name}:</strong> ${m.short}. Anvendes til: ${m.use}. Statistik: ${m.stat}.</p>`;}).join('')}${f.testtyper.includes('liking')?`<h2 style="color:var(--acc);margin:16px 0 8px">3. Resultater</h2><table><thead><tr><th>Produkt</th><th>Kode</th><th>Gns. liking</th><th>n</th></tr></thead><tbody>${pd.map(p=>`<tr><td>${esc(p.navn)}</td><td>${p.kode}</td><td>${p.gns}</td><td>${p.n}</td></tr>`).join('')}</tbody></table>`:''}<h2 style="color:var(--acc);margin:16px 0 8px">4. Konklusion</h2><p>${f.deltagere.length} deltagere deltog.</p><div style="height:1px;background:var(--brd);margin:16px 0"></div><div style="font-size:11px;color:var(--mut);text-align:center">SenseFlow Pro &middot; ${new Date().toLocaleDateString('da-DK')}</div></div><div class="row" style="justify-content:center;margin-top:16px"><button class="btn btn-p" onclick="window.print()">&#9113; Print / Gem som PDF</button></div>`;
+  const el=document.getElementById('rapport-preview');el.style.display='block';
+  el.innerHTML=`<div style="max-width:700px;margin:0 auto;font-size:13px;line-height:1.8"><div style="text-align:center;border-bottom:2px solid var(--brd);padding-bottom:20px;margin-bottom:20px"><div style="font-size:22px;font-weight:700;color:var(--acc)">Sensorisk Analyserapport</div><div style="color:var(--mut)">${esc(f.navn)}</div><div style="font-size:12px;color:var(--mut)">${esc(f.institution||'')} &middot; ${esc(f.dato||'')} &middot; ${esc(f.ansvarlig||'')}</div></div><h2 style="color:var(--acc);margin-bottom:8px">Forsogdesign</h2><table><tbody><tr><td style="font-weight:600;color:var(--mut);width:140px">Formal</td><td>${esc(f.formal||'&mdash;')}</td></tr><tr><td style="font-weight:600;color:var(--mut)">Panel</td><td>${esc(f.panel)}</td></tr><tr><td style="font-weight:600;color:var(--mut)">Deltagere</td><td>${f.deltagere.length} (mal: ${f.antalMaal})</td></tr><tr><td style="font-weight:600;color:var(--mut)">Metoder</td><td>${f.testtyper.map(t=>MTH[t]?.name||t).join(', ')}</td></tr><tr><td style="font-weight:600;color:var(--mut)">Produkter</td><td>${f.produkter.map(p=>`${esc(p.navn)} (${p.kode})`).join('; ')}</td></tr></tbody></table>${f.testtyper.includes('liking')?`<h2 style="color:var(--acc);margin:16px 0 8px">Resultater</h2><table><thead><tr><th>Produkt</th><th>Kode</th><th>Gns. liking</th><th>n</th></tr></thead><tbody>${pd.map(p=>`<tr><td>${esc(p.navn)}</td><td>${p.kode}</td><td>${p.gns}</td><td>${p.n}</td></tr>`).join('')}</tbody></table>`:''}<div style="height:1px;background:var(--brd);margin:16px 0"></div><div style="font-size:11px;color:var(--mut);text-align:center">SenseFlow Pro &middot; ${new Date().toLocaleDateString('da-DK')}</div></div><div class="row" style="justify-content:center;margin-top:16px"><button class="btn btn-p" onclick="window.print()">&#9113; Print / Gem som PDF</button></div>`;
 }
 
-function renderMG(){
-  const el=document.getElementById('metode-grid');if(!el)return;
-  el.innerHTML=Object.values(MTH).map(m=>`<div class="card-sm"><div style="font-size:.59rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--warm);margin-bottom:4px">${m.tag}</div><h3 style="margin-bottom:8px;font-size:15px">${m.name}</h3><p style="font-size:12px;color:var(--mut);margin-bottom:10px">${m.short}</p><div style="height:1px;background:var(--brd);margin-bottom:10px"></div><div style="font-size:12px;display:grid;gap:5px"><div><strong>Anvendelse:</strong> ${m.use}</div><div><strong>Hvornaar:</strong> ${m.when}</div><div><strong>Statistik:</strong> ${m.stat}</div><div style="color:var(--acc)">+ ${m.pros}</div><div style="color:var(--dan)">&#8722; ${m.cons}</div></div><div style="height:1px;background:var(--brd);margin:10px 0"></div><button class="btn btn-p btn-sm" style="width:100%" onclick="go('opret');setTimeout(()=>{ttSel=new Set(['${m.id}']);rTT();},100)">+ Brug denne metode</button></div>`).join('');
-}
+// ── METODEGUIDE ──
+function renderMG(){const el=document.getElementById('metode-grid');if(!el)return;el.innerHTML=Object.values(MTH).map(m=>`<div class="card-sm"><div style="font-size:.59rem;font-weight:700;text-transform:uppercase;color:var(--warm);margin-bottom:4px">${m.tag}</div><h3 style="margin-bottom:6px;font-size:15px">${m.name}</h3><p style="font-size:12px;color:var(--mut);margin-bottom:8px">${m.short}</p><div class="divider"></div><div style="font-size:12px;display:grid;gap:4px"><div><strong>Brug:</strong> ${m.use}</div><div><strong>Statistik:</strong> ${m.stat}</div><div style="color:var(--acc)">+ ${m.pros}</div><div style="color:var(--dan)">&#8722; ${m.cons}</div></div><div class="divider"></div><button class="btn btn-p btn-sm" style="width:100%" onclick="go('opret');setTimeout(()=>{ttSel=new Set(['${m.id}']);rTT();},100)">+ Brug denne metode</button></div>`).join('');}
 
-function desSel(key,val,evt){
-  if(key==='goal'){dG=val;document.getElementById('des-s1').querySelectorAll('.tt-card').forEach(c=>c.classList.remove('on'));evt.currentTarget.classList.add('on');setTimeout(()=>{document.getElementById('des-s2').style.display='block';document.getElementById('ds2')?.classList.add('on');},150);}
-  if(key==='prods'){dP=val;document.getElementById('des-s2').querySelectorAll('.tt-card').forEach(c=>c.classList.remove('on'));evt.currentTarget.classList.add('on');setTimeout(()=>{document.getElementById('des-s3').style.display='block';document.getElementById('ds3')?.classList.add('on');},150);}
-  if(key==='panel'){dPan=val;evt.currentTarget.classList.add('on');showDesRes();}
-}
-function showDesRes(){
-  let method,nDel,rand,stat;
-  if(dG==='disc'){method=dP===2?'pairedcomp':'triangle';nDel=25;rand='complete';stat='Binomialtest';}
-  else if(dG==='pref'){method=dP==='4+'?'ranking':'liking';nDel=dPan==='consumer'?60:dPan==='semi'?20:10;rand='williams';stat='ANOVA, Tukey HSD';}
-  else if(dG==='desc'){method='cata';nDel=dPan==='consumer'?50:15;rand='latin';stat='Cochran Q';}
-  else{method='jar';nDel=30;rand='williams';stat='Penalty Analysis';}
-  const m=MTH[method];
-  document.getElementById('des-res').style.display='block';
-  document.getElementById('des-out').innerHTML=`<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:14px"><div class="card-sm"><div style="font-size:11px;color:var(--mut);margin-bottom:4px">Anbefalet metode</div><strong>${m?.name||method}</strong><br><span style="font-size:12px;color:var(--mut)">${m?.short||''}</span></div><div class="card-sm"><div style="font-size:11px;color:var(--mut);margin-bottom:4px">Antal deltagere</div><strong>n &ge; ${nDel}</strong></div><div class="card-sm"><div style="font-size:11px;color:var(--mut);margin-bottom:4px">Randomisering</div><strong>${RAND.find(r=>r.id===rand)?.name||rand}</strong></div><div class="card-sm"><div style="font-size:11px;color:var(--mut);margin-bottom:4px">Statistik</div><strong>${stat}</strong></div></div>`;
-  window._dm=method;window._dn=nDel;window._dr=rand;
-}
-function applyDesign(){go('opret');setTimeout(()=>{ttSel=new Set([window._dm||'liking']);document.getElementById('f-ant').value=window._dn||30;randSel=window._dr||'williams';rTT();rRand();},100);}
-function resetDesigner(){dG=null;dP=null;dPan=null;['des-s2','des-s3','des-res'].forEach(id=>document.getElementById(id).style.display='none');document.querySelectorAll('.tt-card').forEach(c=>c.classList.remove('on'));document.getElementById('ds1')?.classList.add('on');['ds2','ds3'].forEach(id=>document.getElementById(id)?.classList.remove('on'));}
-
-function openEdit(id){
-  eF=S.forsog.find(f=>f.id===id);if(!eF)return;
-  document.getElementById('edit-modal').classList.add('on');
-  document.getElementById('edit-inner').innerHTML=`<div class="row" style="justify-content:space-between;margin-bottom:16px"><h3>Rediger: ${esc(eF.navn)}</h3><button class="btn btn-sm" onclick="closeEdit()">&#10005;</button></div><div class="fr2"><div class="fg"><label>Forsogsnavn</label><input type="text" id="e-navn" value="${esc(eF.navn||'')}"></div><div class="fg"><label>Ansvarlig</label><input type="text" id="e-ans" value="${esc(eF.ansvarlig||'')}"></div></div><div class="fg"><label>Formal</label><textarea id="e-form">${esc(eF.formal||'')}</textarea></div><div class="fr2"><div class="fg"><label>Paneltype</label><select id="e-pan">${['Utraenede forbrugere','Semitraenet panel','Ekspertpanel','Studerende','QDA-panel'].map(o=>`<option${o===eF.panel?' selected':''}>${o}</option>`).join('')}</select></div><div class="fg"><label>Mal deltagere</label><input type="number" id="e-ant" value="${eF.antalMaal||30}"></div></div><div class="fr2"><div class="fg"><label>Temperatur</label><input type="text" id="e-temp" value="${esc(eF.temp||'')}"></div><div class="fg"><label>Maengde</label><input type="text" id="e-maengde" value="${esc(eF.maengde||'')}"></div></div><div class="row" style="justify-content:space-between;margin-top:14px"><button class="btn" onclick="closeEdit()">Annuller</button><button class="btn btn-p" onclick="saveEdit()">&#10003; Gem aendringer</button></div>`;
-}
+// ── EDIT ──
+function openEdit(id){eF=S.forsog.find(f=>f.id===id);if(!eF)return;document.getElementById('edit-modal').classList.add('on');document.getElementById('edit-inner').innerHTML=`<div class="row" style="justify-content:space-between;margin-bottom:16px"><h3>Rediger</h3><button class="btn btn-sm" onclick="closeEdit()">&#10005;</button></div><div class="fr2"><div class="fg"><label>Forsogsnavn</label><input type="text" id="e-navn" value="${esc(eF.navn||'')}"></div><div class="fg"><label>Ansvarlig</label><input type="text" id="e-ans" value="${esc(eF.ansvarlig||'')}"></div></div><div class="fg"><label>Formal</label><textarea id="e-form">${esc(eF.formal||'')}</textarea></div><div class="fr2"><div class="fg"><label>Panel</label><select id="e-pan">${['Utraenede forbrugere','Semitraenet panel','Ekspertpanel','Studerende'].map(o=>`<option${o===eF.panel?' selected':''}>${o}</option>`).join('')}</select></div><div class="fg"><label>Mal del.</label><input type="number" id="e-ant" value="${eF.antalMaal||30}"></div></div><div class="row" style="justify-content:space-between;margin-top:14px"><button class="btn" onclick="closeEdit()">Annuller</button><button class="btn btn-p" onclick="saveEdit()">&#10003; Gem</button></div>`;}
 function closeEdit(){document.getElementById('edit-modal').classList.remove('on');eF=null;}
-function saveEdit(){
-  if(!eF)return;const navn=document.getElementById('e-navn')?.value.trim();if(!navn){alert('Angiv forsogsnavn.');return;}
-  eF.navn=navn;eF.ansvarlig=document.getElementById('e-ans')?.value||'';eF.formal=document.getElementById('e-form')?.value||'';eF.panel=document.getElementById('e-pan')?.value||'';eF.antalMaal=+(document.getElementById('e-ant')?.value||30);eF.temp=document.getElementById('e-temp')?.value||'';eF.maengde=document.getElementById('e-maengde')?.value||'';
-  save();closeEdit();rFL();updDB();updQS();updAS();alert('Aendringer gemt!');
-}
+async function saveEdit(){if(!eF)return;const navn=document.getElementById('e-navn')?.value.trim();if(!navn){alert('Angiv navn.');return;}eF.navn=navn;eF.ansvarlig=document.getElementById('e-ans')?.value||'';eF.formal=document.getElementById('e-form')?.value||'';eF.panel=document.getElementById('e-pan')?.value||'';eF.antalMaal=+(document.getElementById('e-ant')?.value||30);await gemData();closeEdit();rFL();updDB();updQS();}
 
-function doCSV(){
-  if(!S.svar.length){alert('Ingen data at eksportere endnu.');return;}
-  const ac=[...new Set(S.forsog.flatMap(f=>f.cata||[]))];
-  const aj=[...new Set(S.forsog.flatMap(f=>f.jar||[]))];
-  const ar=[...new Set(S.forsog.flatMap(f=>f.rata||[]))];
-  const fm={};S.forsog.forEach(f=>fm[f.id]=f);
-  const hd=['Forsog','Deltager','Produkt','Kode','Raekkefolge','Liking',...ac.map(c=>'CATA_'+c),...aj.map(j=>'JAR_'+j),...ar.map(r=>'RATA_'+r),'Rang','Kommentar','Preference','Dato'];
-  const rows=S.svar.map(s=>{const f=fm[s.forsogId];return[f?f.navn:'',s.deltager||'',s.produkt||'',s.proveKode||'',s.raekkefolgeNr!=null?s.raekkefolgeNr:'',s.liking!=null?s.liking:'',...ac.map(c=>(s.cata&&s.cata.includes(c))?'1':'0'),...aj.map(j=>(s.jar&&s.jar[j]!=null)?JL[s.jar[j]]:''),...ar.map(r=>(s.rata&&s.rata[r]!==undefined)?s.rata[r]:''),s.ranking||'',s.kommentar||'',s.preference||'',s.tidspunkt?new Date(s.tidspunkt).toLocaleDateString('da-DK'):''];});
-  const csv=[hd,...rows].map(r=>r.map(c=>'"'+String(c).replace(/"/g,'""')+'"').join(',')).join('\r\n');
-  const blob=new Blob(['\uFEFF'+csv],{type:'text/csv;charset=utf-8;'});
-  const url=URL.createObjectURL(blob);const a=document.createElement('a');
-  a.href=url;a.download='SenseFlow_'+new Date().toISOString().slice(0,10)+'.csv';
-  document.body.appendChild(a);a.click();document.body.removeChild(a);setTimeout(()=>URL.revokeObjectURL(url),5000);
-}
+// ── CSV ──
+function doCSV(){if(!S.svar.length){alert('Ingen data endnu.');return;}const ac=[...new Set(S.forsog.flatMap(f=>f.cata||[]))];const aj=[...new Set(S.forsog.flatMap(f=>f.jar||[]))];const ar=[...new Set(S.forsog.flatMap(f=>f.rata||[]))];const fm={};S.forsog.forEach(f=>fm[f.id]=f);const hd=['Forsog','Deltager','Produkt','Kode','Raekkefolge','Liking',...ac.map(c=>'CATA_'+c),...aj.map(j=>'JAR_'+j),...ar.map(r=>'RATA_'+r),'Kommentar','Preference','Dato'];const rows=S.svar.map(s=>{const f=fm[s.forsogId];return[f?f.navn:'',s.deltager||'',s.produkt||'',s.proveKode||'',s.raekkefolgeNr!=null?s.raekkefolgeNr:'',s.liking!=null?s.liking:'',...ac.map(c=>(s.cata&&s.cata.includes(c))?'1':'0'),...aj.map(j=>(s.jar&&s.jar[j]!=null)?JL[s.jar[j]]:''),...ar.map(r=>(s.rata&&s.rata[r]!==undefined)?s.rata[r]:''),s.kommentar||'',s.preference||'',s.tidspunkt?new Date(s.tidspunkt).toLocaleDateString('da-DK'):''];});const csv=[hd,...rows].map(r=>r.map(c=>'"'+String(c).replace(/"/g,'""')+'"').join(',')).join('\r\n');const blob=new Blob(['\uFEFF'+csv],{type:'text/csv;charset=utf-8;'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='SenseFlow_'+new Date().toISOString().slice(0,10)+'.csv';document.body.appendChild(a);a.click();document.body.removeChild(a);setTimeout(()=>URL.revokeObjectURL(url),5000);}
 
-function shuf(a){const b=[...a];for(let i=b.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[b[i],b[j]]=[b[j],b[i]];}return b;}
-
-load();initOpret();renderMG();checkURL();
-setTimeout(()=>updDB(),50);
-window.addEventListener('beforeunload',()=>save());
-setInterval(()=>save(),60000);
+// ── START ──
+window.addEventListener('DOMContentLoaded',()=>{
+  GH_TOKEN=localStorage.getItem('sf_token')||'';
+  GH_USER=localStorage.getItem('sf_user')||'johanneshlarsen';
+  GH_REPO=localStorage.getItem('sf_repo')||'senseflow';
+  if(!GH_TOKEN){visSetup();}
+  else{visApp();init();}
+});
 </script>
 </body>
 </html>
