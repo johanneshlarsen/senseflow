@@ -513,8 +513,9 @@ function updDB(){
 function rFL(){
   const tb=document.getElementById('fl-tb');if(!tb)return;
   if(!S.forsog.length){tb.innerHTML='<tr><td colspan="7" style="text-align:center;color:var(--mut);padding:28px">Ingen forsog.</td></tr>';return;}
-  tb.innerHTML=S.forsog.map(f=>`<tr><td><strong>${esc(f.navn)}</strong></td><td>${f.testtyper.map(t=>MTH[t]?.name||t).join(', ')}</td><td>${f.produkter.length}</td><td>${f.produkter.map(p=>`<span class="badge b-amber">${p.kode}</span>`).join(' ')}</td><td>${f.deltagere.length}</td><td style="font-size:11px;color:var(--mut)">${f.oprettet}</td><td style="white-space:nowrap"><button class="btn btn-sm btn-w" onclick="openEdit(${f.id})" style="margin-right:3px">&#9998; Rediger</button><button class="btn btn-sm btn-d" onclick="delF(${f.id})">&#128465;</button></td></tr>`).join('');
+  tb.innerHTML=S.forsog.map(f=>`<tr><td><strong>${esc(f.navn)}</strong></td><td>${f.testtyper.map(t=>MTH[t]?.name||t).join(', ')}</td><td>${f.produkter.length}</td><td>${f.produkter.map(p=>`<span class="badge b-amber">${p.kode}</span>`).join(' ')}</td><td>${f.deltagere.length}</td><td style="font-size:11px;color:var(--mut)">${f.oprettet}</td><td style="white-space:nowrap"><button class="btn btn-sm btn-p" onclick="goQ(${f.id})" style="margin-right:3px">&#9672; QR</button><button class="btn btn-sm btn-w" onclick="openEdit(${f.id})" style="margin-right:3px">&#9998; Rediger</button><button class="btn btn-sm btn-d" onclick="delF(${f.id})">&#128465;</button></td></tr>`).join('');
 }
+function goQ(id){go('qr');setTimeout(()=>{document.getElementById('qr-sel').value=id;visQR();},50);}
 async function delF(id){if(!confirm('Slet forsog og alle data?'))return;S.forsog=S.forsog.filter(f=>f.id!==id);S.svar=S.svar.filter(s=>s.forsogId!==id);await gemData();rFL();updDB();}
 
 // ── QR ──
